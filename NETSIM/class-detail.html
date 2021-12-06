@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>NETSIM - Chi tiết lớp học</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <!-- Favicons -->
+        <link href="assets/img/favicon.png" rel="icon">
+        <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+        <!-- Google Fonts -->
+        <link href="https://fonts.gstatic.com" rel="preconnect">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+        <!-- Vendor CSS Files -->
+        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+        <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+        <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+        <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+        <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+        <!-- Template Main CSS File -->
+        <link href="assets/css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- ======= Header ======= -->
+        <header id="header" class="header fixed-top d-flex align-items-center">
+            <div class="d-flex align-items-center justify-content-between">
+                <a href="index.html" class="logo d-flex align-items-center">
+                <img src="assets/img/logo.png" alt="">
+                <span class="d-none d-lg-block">NETSIM</span>
+                </a>
+                <i class="bi bi-list toggle-sidebar-btn"></i>
+            </div>
+            <!-- End Logo -->
+            <div class="search-bar">
+                <form class="search-form d-flex align-items-center" method="POST" action="#">
+                    <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+                    <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+                </form>
+            </div>
+            <!-- End Tìm kiếm -->
+            <nav class="header-nav ms-auto">
+                <ul class="d-flex align-items-center">
+                    <li class="nav-item d-block d-lg-none">
+                        <a class="nav-link nav-icon search-bar-toggle " href="#">
+                        <i class="bi bi-search"></i>
+                        </a>
+                    </li>
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#createlophoc"><i class="bi bi-file-earmark-plus me-1"></i> Tạo lớp học</button>
+                    <!-- End Icon Tìm kiếm-->
+                    <li class="nav-item dropdown pe-3">
+                        <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+                        <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+                        <span class="d-none d-md-block dropdown-toggle ps-2">Lê Sỹ Tùng</span>
+                        </a><!-- End Ava cá nhân -->
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                            <li class="dropdown-header">
+                                <h6>Lê Sỹ Tùng</h6>
+                                <span>Giáo viên</span>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                                <i class="bi bi-person"></i>
+                                <span>Thông tin giáo viên</span>
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                                <i class="bi bi-gear"></i>
+                                <span>Tài khoản</span>
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                                <i class="bi bi-question-circle"></i>
+                                <span>Trợ giúp</span>
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center" href="pages-login.html">
+                                <i class="bi bi-box-arrow-right"></i>
+                                <span>Đăng xuất</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- End Menu thông tin cá nhân -->
+                    </li>
+                    <!-- End Menu người dùng -->
+                </ul>
+            </nav>
+        </header>
+        <!-- End Header -->
+        <!-- ======= Menu ======= -->
+        -
+        <aside id="sidebar" class="sidebar">
+            <ul class="sidebar-nav" id="sidebar-nav">
+                <li class="nav-item">
+                    <a class="nav-link collapsed" data-bs-target="#account-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-caret-right-square"></i><span>Quản lý đăng nhập</span><i class="bi bi-chevron-down ms-auto"></i>
+                    </a>
+                    <ul id="account-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a href="manage-accounts.html">
+                            <i class="bi bi-circle"></i><span>Quản lý tài khoản</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="manage-roles.html">
+                            <i class="bi bi-circle"></i><span>Quản lý quyền</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- End Quản lý tài khoản -->
+                <li class="nav-item">
+                    <a class="nav-link collapsed" data-bs-target="#educate-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-book-half"></i><span>Quản lý đào tạo</span><i class="bi bi-chevron-down ms-auto"></i>
+                    </a>
+                    <ul id="educate-nav" class="nav-content collapse show " data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#createlophoc">
+                            <i class="bi bi-circle"></i><span>Tạo lớp học mới</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <i class="bi bi-circle"></i><span>Thêm thành viên vào lớp học</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html" class="active">
+                            <i class="bi bi-circle"></i><span>Các lớp đang học</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                            <i class="bi bi-circle"></i><span>Các lớp học đã xong</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- End Quản lý đào tạo -->
+                <li class="nav-item">
+                    <a class="nav-link collapsed" data-bs-target="#teaching-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-hand-index-thumb"></i><span>Quản lý giảng dạy</span><i class="bi bi-chevron-down ms-auto"></i>
+                    </a>
+                    <ul id="teaching-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a href="index.html">
+                            <i class="bi bi-circle"></i><span>Lớp học đang diễn ra</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                            <i class="bi bi-circle"></i><span>Lớp học phụ trách</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" data-bs-target="#classes-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-layout-text-window-reverse"></i><span>Các lớp tham gia học</span><i class="bi bi-chevron-down ms-auto"></i>
+                    </a>
+                    <ul id="classes-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a href="student-classes.html">
+                            <i class="bi bi-circle"></i><span>Lớp 1</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="student-classes.html">
+                            <i class="bi bi-circle"></i><span>Lớp 2</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" data-bs-target="#example-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-safe2"></i><span>Quản lý thực hành</span><i class="bi bi-chevron-down ms-auto"></i>
+                    </a>
+                    <ul id="example-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a href="practice-manage.html">
+                            <i class="bi bi-circle"></i><span>Thống kê</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="practice-create.html">
+                            <i class="bi bi-circle"></i><span>Tạo thực hành</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" data-bs-target="#example-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-list-task"></i><span>Quản lý bài thực hành mẫu</span><i class="bi bi-chevron-down ms-auto"></i>
+                    </a>
+                    <ul id="example-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a href="#">
+                            <i class="bi bi-circle"></i><span>Quản lý thể loại bài thực hành</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="examples.html">
+                            <i class="bi bi-circle"></i><span>Quản lý bài thực hành mẫu</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- End Quản lý thực hành-->
+                <li class="nav-heading">Cá nhân</li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="users-profile.html">
+                    <i class="bi bi-person"></i>
+                    <span>Profile</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="pages-login.html">
+                    <i class="bi bi-box-arrow-in-right"></i>
+                    <span>Đăng xuất</span>
+                    </a>
+                </li>
+                <!-- End Đăng xuất -->
+            </ul>
+        </aside>
+        <!-- End Menu-->
+        <main id="main" class="main">
+            <div class="pagetitle">
+                <h1>Lớp học</h1>
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Lớp học</a></li>
+                        <li class="breadcrumb-item active">Chi tiết lớp học</li>
+                        <li class="breadcrumb-item active">Lớp 1</li>
+                    </ol>
+                </nav>
+            </div>
+            <!-- End - Tieu de -->
+            <div class="card">
+                <div class="card-body">
+                    <!-- Tab chi tiết lớp học -->
+                    <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist" style="padding: 10px 0 10px 0;">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-trangchu-tab" data-bs-toggle="pill" data-bs-target="#pills-trangchu" type="button" role="tab" aria-controls="pills-trangchu" aria-selected="true">Trang chủ</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-danhsach-tab" data-bs-toggle="pill" data-bs-target="#pills-danhsach" type="button" role="tab" aria-controls="pills-danhsach" aria-selected="false">Danh sách lớp</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-theodoi-tab" data-bs-toggle="pill" data-bs-target="#pills-theodoi" type="button" role="tab" aria-controls="pills-theodoi" aria-selected="false">Theo dõi</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content pt-2" id="myTabContent">
+                        <!-- Trang chu -->
+                        <div class="tab-pane fade show active" id="pills-trangchu" role="tabpanel" aria-labelledby="trangchu-tab">
+                            <div class="row justify-content-md-center">
+                                <div class="col-lg-12">
+                                    <div class="card">
+                                        <img src="assets/img/classroom1-detail.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <div class="row mb-3">
+                                                <div class="col-sm-2">
+                                                    <h4 class="class-title-detail">Tên lớp học 1</h4>
+                                                </div>
+                                                <div class="col-sm-10" style="padding-top: 20px;">
+                                                    <button style="float: right;" type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#verticalycentered"><i class="bi bi-info-circle"></i></button>
+                                                </div>
+                                                <div class="modal fade" id="verticalycentered" tabindex="-1">
+                                                    <div class="modal-dialog modal-dialog-centered">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title">Thông tin lớp học</h5>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="row mb-3">
+                                                                    <label for="inputText" class="col-sm-2 col-form-label" style="font-weight: 700;">Mã lớp</label>
+                                                                    <div class="col-sm-6">
+                                                                        <input type="text" class="form-control" value="KHGKURJ" disabled id="myInput">
+                                                                    </div>
+                                                                    <div class="col-sm-3">
+                                                                        <button style="float: right;" type="button" class="btn btn-light" onclick="Copytext()">Sao chép</button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row mb-3">
+                                                                    <label for="inputText" class="col-sm-2 col-form-label" style="font-weight: 700;">Chủ đề</label>
+                                                                    <div class="col-sm-10">
+                                                                        <label for="inputText" class="col-form-label">Toán học</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row mb-3">
+                                                                    <label for="inputText" class="col-sm-2 col-form-label" style="font-weight: 700;">Phòng</label>
+                                                                    <div class="col-sm-10">
+                                                                        <label for="inputText" class="col-form-label">123</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End Vertically centered Modal-->
+                                            </div>
+                                            <p class="class-infomation-detail">Lớp giảng dạy về kỹ thuật </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Yêu cầu thực hành</h5>
+                                            <!-- Yêu cầu -->
+                                            <form>
+                                                <div class="row mb-3">
+                                                    <div class="quill-editor-default">
+                                                    </div>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary btn-sm" style="float: right;">Gửi yêu cầu</button>
+                                        </div>
+                                        </form><!-- End Yêu cầu -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End - Chi tiet lop hoc -->
+                        </div>
+                        <!-- End - Trang chu -->
+                        <!-- DS Lớp -->
+                        <div class="tab-pane fade" id="pills-danhsach" role="tabpanel" aria-labelledby="danhsach-tab">
+                            <h3>Giáo viên</h3>
+                            <hr>
+                            <!-- Giáo viên -->
+                            <table class="table table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td style="width:5%;"><img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle avatar"></td>
+                                        <td style="font-weight: 700; width: 30%;">Lê Sỹ Tùng</td>
+                                        <td>Giảng viên chính</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- End Giáo viên -->
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <h3>Học viên</h3>
+                                </div>
+                                <div class="col-lg-7">
+                                    <p class="count-student col-form-label" style="font-weight: 500;">3 học viên</p>
+                                </div>
+                                <div class="col-lg-2">
+                                    <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#addHocvien"> Thêm học viên <i class="bi bi-plus-square me-1" ></i></button>
+                                </div>
+                                <!-- Modal thêm học viên-->
+                                <div class="modal fade" id="addHocvien" tabindex="-1">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Thêm học viên vào lớp</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-sm-8">
+                                                        <input type="text" class="form-control" placeholder="Nhập tên học viên">
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <select class="form-select" aria-label="Default select example">
+                                                            <option selected>Sắp xếp theo</option>
+                                                            <option value="1">Đơn vị</option>
+                                                            <option value="2">A → Z</option>
+                                                            <option value="3">Z → A</option>
+                                                        </select>
+                                                    </div>
+                                                    <br><br>
+                                                    <div class="col-sm-12">
+                                                        <div class="card" style="padding-top: 5px;">
+                                                            <ul class="list-group">
+                                                                <li class="list-group-item">
+                                                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                                    Nguyễn Văn Nam
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                                    Lê Sỹ Tùng
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                                    Trần Thị B
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                                    Trần Thị B
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                                    Trần Thị B
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                                                <button type="button" class="btn btn-primary">Thêm</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Modal thêm học viên-->
+                            </div>
+                            <hr>
+                            <!-- Danh sách học viên-->
+                            <table class="table table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td><span><img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle avatar"></td>
+                                        <td style="font-weight: 700; width: 30%;">Lê Sỹ Tùng</td>
+                                        <td>HV01</td>
+                                        <td>Học viện Kỹ Thuật quân sự</td>
+                                        <td>Lớp 1</td>
+                                        <td><span class="badge bg-success">Trực tuyến</span></td>
+                                        <td><button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#baithuchanhhocvien">Bài thực hành <i class="bi bi-arrow-right me-1"></i> </button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td style="width:5%;"><img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle avatar"></td>
+                                        <td style="font-weight: 700; width: 30%;">Lê Sỹ Tùng</td>
+                                        <td>HV01</td>
+                                        <td>Học viện Kỹ Thuật quân sự</td>
+                                        <td>Lớp 1</td>
+                                        <td><span class="badge bg-success">Trực tuyến</span></td>
+                                        <td><button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#baithuchanhhocvien">Bài thực hành <i class="bi bi-arrow-right me-1"></i> </button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td style="width:5%;"><img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle avatar"></td>
+                                        <td style="font-weight: 700; width: 30%;">Lê Sỹ Tùng</td>
+                                        <td>HV01</td>
+                                        <td>Học viện Kỹ Thuật quân sự</td>
+                                        <td>Lớp 1</td>
+                                        <td><span class="badge bg-danger">Ngoại tuyến</span></td>
+                                        <td><button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#baithuchanhhocvien">Bài thực hành <i class="bi bi-arrow-right me-1"></i> </button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- End Danh sách học viên-->
+                        </div>
+                        <!-- End - Danh sach lop -->
+                        <!-- Theo doi -->
+                        <div class="tab-pane fade" id="pills-theodoi" role="tabpanel" aria-labelledby="theodoi-tab">
+                            <!--Tạo nhóm-->
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row mb-3 group-header">
+                                        <h4 class="col-sm-8 col-form-label" style="font-weight: 700;">Danh sách nhóm</h4>
+                                        <div class="col-sm-4">
+                                            <div class="button-group">
+                                                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#taonhom"><i class="bi bi-file-earmark-plus me-1" ></i>Tạo nhóm</button>
+                                                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#taonhomnhanh" ><i class="bi bi-file-earmark-plus-fill me-1" ></i>Tạo nhóm nhanh</button>
+                                            </div>
+                                        </div>
+                                        <!-- Modal tạo nhóm-->
+                                        <div class="modal fade" id="taonhom" tabindex="-1">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Tạo nhóm</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="row mb-3">
+                                                                    <label for="inputText" class="col-sm-2 col-form-label">Tên nhóm</label>
+                                                                    <div class="col-sm-10">
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-8">
+                                                                <input type="text" class="form-control" placeholder="Nhập tên học viên">
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <select class="form-select" aria-label="Default select example">
+                                                                    <option selected>Sắp xếp theo</option>
+                                                                    <option value="1">Đơn vị</option>
+                                                                    <option value="2">A → Z</option>
+                                                                    <option value="3">Z → A</option>
+                                                                </select>
+                                                            </div>
+                                                            <br><br>
+                                                            <div class="col-sm-12">
+                                                                <div class="card" style="padding-top: 5px;">
+                                                                    <ul class="list-group">
+                                                                        <li class="list-group-item">
+                                                                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                                            Nguyễn Văn Nam
+                                                                        </li>
+                                                                        <li class="list-group-item">
+                                                                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                                            Lê Sỹ Tùng
+                                                                        </li>
+                                                                        <li class="list-group-item">
+                                                                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                                            Trần Thị B
+                                                                        </li>
+                                                                        <li class="list-group-item">
+                                                                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                                            Trần Thị B
+                                                                        </li>
+                                                                        <li class="list-group-item">
+                                                                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                                            Trần Thị B
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                                                        <button type="button" class="btn btn-primary">Tạo</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Modal tạo nhóm-->
+                                        <!-- Modal tạo nhóm nhanh-->
+                                        <div class="modal fade" id="taonhomnhanh" tabindex="-1">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Tạo nhóm nhanh</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="row">
+                                                            <div class="col-lg-4">
+                                                                <div class="row mb-3">
+                                                                    <label for="inputNumber" class="col-sm-6 col-form-label">Số nhóm</label>
+                                                                    <div class="col-sm-6">
+                                                                        <input type="number" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-8">
+                                                                <div class="row mb-3">
+                                                                    <label for="inputText" class="col-sm-3 col-form-label">Tiền tố bắt đầu</label>
+                                                                    <div class="col-sm-9">
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                                                        <button type="button" class="btn btn-primary">Tạo</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Modal tạo nhóm nhanh-->
+                                    </div>
+                                    <!-- Danh sach nhóm -->
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button collapsed button-group-collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" >
+                                                Nhóm 1
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <!-- Danh sach nhom -->
+                                                    <button type="button" class="btn btn-primary btn-sm" data-bs-target="#baithuchanhnhom" data-bs-toggle="modal">Danh sách cách bài thực hành</button>
+                                                    <hr>
+                                                    <table class="table table-borderless">
+                                                        <thead>
+                                                            <tr class="table-success">
+                                                                <th scope="col">STT</th>
+                                                                <th scope="col">Tên học viên</th>
+                                                                <th scope="col">Đơn vị</th>
+                                                                <th scope="col">Ngày sinh</th>
+                                                                <th scope="col">Trạng thái</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="row">1</th>
+                                                                <td>Lê Sỹ Tùng</td>
+                                                                <td>HVKTQS</td>
+                                                                <td>18/12/1998</td>
+                                                                <td><span class="badge bg-success">Hoàn thành</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">1</th>
+                                                                <td>Lê Sỹ Tùng</td>
+                                                                <td>HVKTQS</td>
+                                                                <td>18/12/1998</td>
+                                                                <td><span class="badge bg-warning">Đang thực hiện</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">1</th>
+                                                                <td>Lê Sỹ Tùng</td>
+                                                                <td>HVKTQS</td>
+                                                                <td>18/12/1998</td>
+                                                                <td><span class="badge bg-warning">Đang thực hiện</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">1</th>
+                                                                <td>Lê Sỹ Tùng</td>
+                                                                <td>HVKTQS</td>
+                                                                <td>18/12/1998</td>
+                                                                <td><span class="badge bg-success">Hoàn thành</span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <!-- End - Danh sach nhom -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed button-group-collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" >
+                                            Nhóm 2
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <!-- Danh sach nhom -->
+                                                <button type="button" class="btn btn-primary btn-sm" data-bs-target="#baithuchanhnhom" data-bs-toggle="modal">Danh sách cách bài thực hành</button>
+                                                <hr>
+                                                <table class="table table-borderless">
+                                                    <thead>
+                                                        <tr class="table-success">
+                                                            <th scope="col">STT</th>
+                                                            <th scope="col">Tên học viên</th>
+                                                            <th scope="col">Đơn vị</th>
+                                                            <th scope="col">Ngày sinh</th>
+                                                            <th scope="col">Trạng thái</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">1</th>
+                                                            <td>Lê Sỹ Tùng</td>
+                                                            <td>HVKTQS</td>
+                                                            <td>18/12/1998</td>
+                                                            <td><span class="badge bg-success">Hoàn thành</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">1</th>
+                                                            <td>Lê Sỹ Tùng</td>
+                                                            <td>HVKTQS</td>
+                                                            <td>18/12/1998</td>
+                                                            <td><span class="badge bg-warning">Đang thực hiện</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">1</th>
+                                                            <td>Lê Sỹ Tùng</td>
+                                                            <td>HVKTQS</td>
+                                                            <td>18/12/1998</td>
+                                                            <td><span class="badge bg-warning">Đang thực hiện</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">1</th>
+                                                            <td>Lê Sỹ Tùng</td>
+                                                            <td>HVKTQS</td>
+                                                            <td>18/12/1998</td>
+                                                            <td><span class="badge bg-success">Hoàn thành</span></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <!-- End - Danh sach nhom -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed button-group-collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" >
+                                            Nhóm 3
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse " aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <!-- Danh sach nhom -->
+                                                <button type="button" class="btn btn-primary btn-sm" data-bs-target="#baithuchanhnhom" data-bs-toggle="modal">Danh sách cách bài thực hành</button>
+                                                <hr>
+                                                <table class="table table-borderless">
+                                                    <thead>
+                                                        <tr class="table-success">
+                                                            <th scope="col">STT</th>
+                                                            <th scope="col">Tên học viên</th>
+                                                            <th scope="col">Đơn vị</th>
+                                                            <th scope="col">Ngày sinh</th>
+                                                            <th scope="col">Trạng thái</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">1</th>
+                                                            <td>Lê Sỹ Tùng</td>
+                                                            <td>HVKTQS</td>
+                                                            <td>18/12/1998</td>
+                                                            <td><span class="badge bg-success">Hoàn thành</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">1</th>
+                                                            <td>Lê Sỹ Tùng</td>
+                                                            <td>HVKTQS</td>
+                                                            <td>18/12/1998</td>
+                                                            <td><span class="badge bg-warning">Đang thực hiện</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">1</th>
+                                                            <td>Lê Sỹ Tùng</td>
+                                                            <td>HVKTQS</td>
+                                                            <td>18/12/1998</td>
+                                                            <td><span class="badge bg-warning">Đang thực hiện</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">1</th>
+                                                            <td>Lê Sỹ Tùng</td>
+                                                            <td>HVKTQS</td>
+                                                            <td>18/12/1998</td>
+                                                            <td><span class="badge bg-success">Hoàn thành</span></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <!-- End - Danh sach nhom -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--End Danh sách nhóm-->
+                                </div>
+                                <!-- End nhóm -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End - Theo doi -->
+                </div>
+            </div>
+            <!-- Tạo lớp học-->
+            <!-- Modal xem bài thực hành -->
+            <div class="modal fade" id="baithuchanhhocvien" tabindex="-1">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Danh sách bài thực hành đã thực hiện</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="card-body">
+                                <table class="table table-borderless">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">STT</th>
+                                            <th scope="col">ID bài thực hành</th>
+                                            <th scope="col">Tên bài thực hành</th>
+                                            <th scope="col">Trạng thái</th>
+                                            <th scope="col">Xem chi tiết</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>BTH01</td>
+                                            <td>Bài thực hành số 01</td>
+                                            <td><span class="badge bg-success">Đã hoàn thành</span></td>
+                                            <td><button type="button" class="btn btn-secondary btn-sm"><i class="bi bi-box-arrow-right"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>BTH02</td>
+                                            <td>Bài thực hành số 02</td>
+                                            <td><span class="badge bg-warning">Đang thực hành</span></td>
+                                            <td><button type="button" class="btn btn-secondary btn-sm"><i class="bi bi-box-arrow-right"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>BTH03</td>
+                                            <td>Bài thực hành số 03</td>
+                                            <td><span class="badge bg-danger">Không hoàn thành</span></td>
+                                            <td><button type="button" class="btn btn-secondary btn-sm"><i class="bi bi-box-arrow-right"></i></button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="baithuchanhnhom" tabindex="-1">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Danh sách bài thực hành đã thực hiện của nhóm 1</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="card-body">
+                                <table class="table table-borderless">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">STT</th>
+                                            <th scope="col">ID bài thực hành</th>
+                                            <th scope="col">Tên bài thực hành</th>
+                                            <th scope="col">Trạng thái</th>
+                                            <th scope="col">Xem chi tiết</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>BTH01</td>
+                                            <td>Bài thực hành số 01</td>
+                                            <td><span class="badge bg-success">Đã hoàn thành</span></td>
+                                            <td><button type="button" class="btn btn-secondary btn-sm"><i class="bi bi-box-arrow-right"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>BTH02</td>
+                                            <td>Bài thực hành số 02</td>
+                                            <td><span class="badge bg-warning">Đang thực hành</span></td>
+                                            <td><button type="button" class="btn btn-secondary btn-sm"><i class="bi bi-box-arrow-right"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>BTH03</td>
+                                            <td>Bài thực hành số 03</td>
+                                            <td><span class="badge bg-danger">Không hoàn thành</span></td>
+                                            <td><button type="button" class="btn btn-secondary btn-sm"><i class="bi bi-box-arrow-right"></i></button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="createlophoc" tabindex="-1">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Tạo lớp học</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <!-- Tạo lớp học -->
+                                            <form>
+                                                <div class="row mb-3">
+                                                    <label for="inputText" class="col-sm-3 col-form-label">Tên lớp học</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <label for="inputText" class="col-sm-3 col-form-label">Chuyên ngành</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <label for="inputText" class="col-sm-3 col-form-label">Phòng</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <label for="inputDate" class="col-sm-3 col-form-label">Ngày bắt đầu</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="date" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <label for="inputDate" class="col-sm-3 col-form-label">Ngày kết thúc</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="date" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <label for="inputPassword" class="col-sm-3 col-form-label">Mô tả lớp học</label>
+                                                    <div class="col-sm-9">
+                                                        <textarea class="form-control" style="height: 100px"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-8">
+                                                        <input type="text" class="form-control" placeholder="Nhập tên học viên">
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <select class="form-select" aria-label="Default select example">
+                                                            <option selected>Sắp xếp theo</option>
+                                                            <option value="1">Đơn vị</option>
+                                                            <option value="2">A → Z</option>
+                                                            <option value="3">Z → A</option>
+                                                        </select>
+                                                    </div>
+                                                    <br><br>
+                                                    <div class="col-sm-12">
+                                                        <div class="card" style="padding-top: 5px;">
+                                                            <ul class="list-group">
+                                                                <li class="list-group-item">
+                                                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                                    Nguyễn Văn Nam
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                                    Lê Sỹ Tùng
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                                    Trần Thị B
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                                    Trần Thị B
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                                    Trần Thị B
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <!-- End - Thêm lóp học -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                            <button type="button" class="btn btn-primary">Tạo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- End #main -->
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+        <!-- Vendor JS Files -->
+        <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/vendor/chart.js/chart.min.js"></script>
+        <script src="assets/vendor/echarts/echarts.min.js"></script>
+        <script src="assets/vendor/quill/quill.min.js"></script>
+        <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+        <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+        <script src="assets/vendor/php-email-form/validate.js"></script>
+        <script src="assets/plugins/multi-select/js/jquery.multi-select.js"></script> <!-- Multi Select Plugin Js --> 
+        <script src="assets/plugins/select2/select2.min.js"></script> <!-- Select2 Js -->
+        <script src="assets/js/pages/forms/advanced-form-elements.js"></script> 
+        <!-- Template Main JS File -->
+        <script src="assets/js/main.js"></script>
+        <script>
+            function Copytext() {
+            /* Get the text field */
+            var copyText = document.getElementById("myInput");
+            
+            /* Select the text field */
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            
+            /* Copy the text inside the text field */
+            navigator.clipboard.writeText(copyText.value);
+            
+            /* Alert the copied text */
+            alert("Đã sao chép: " + copyText.value);
+            }
+        </script>
+    </body>
+</html>
