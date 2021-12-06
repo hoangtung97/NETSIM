@@ -212,7 +212,7 @@
                     </a>
                     <ul id="example-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
                         <li>
-                            <a href="#">
+                            <a href="examples-type.html">
                             <i class="bi bi-circle"></i><span>Quản lý thể loại bài thực hành</span>
                             </a>
                         </li>
@@ -243,50 +243,170 @@
         <!-- End Menu-->
         <main id="main" class="main">
             <div class="pagetitle">
-                <h1>Lớp học</h1>
+                <h1>Quản lý bài thực hành mẫu </h1>
                 <nav>
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Lớp học</a></li>
-                        <li class="breadcrumb-item active">Danh sách lớp học</li>
+                        <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                        <li class="breadcrumb-item active">Quản lý bài thực hành mẫu</li>
                     </ol>
                 </nav>
             </div>
             <!-- End - Tieu de -->
             <section class="section dashboard">
-                <!-- Bài mẫu -->
+                <!-- Quản lý tài khoản -->
                 <div class="card">
+                    <div class="card-header">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-secondary btn-sm" " data-bs-toggle="modal" data-bs-target="#edit-examples">Tạo bài mới <i class="bi bi-person-plus "></i></button>
+                        </div>
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title">Bài tập mẫu thiết kế mạng</h5>
-                        <button type="button" class="btn btn-secondary btn-sm" style="float: right;"><i class="bi bi-share me-1"></i> Chia sẻ</button>
-                        <nav style="--bs-breadcrumb-divider: '•';">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><span class="badge bg-secondary">Tên chuyên ngành</span></li>
-                                <li class="breadcrumb-item"><i class="bi bi-person me-1"></i> Lê Sỹ Tùng</li>
-                                <li class="breadcrumb-item"><i class="bi bi-calendar2-check"></i> 21-10-2021</li>
-                                <li class="breadcrumb-item active" data-bs-toggle="modal" data-bs-target="#largeModal">Chi tiết <i class="bi bi-info-square"></i></li>
-                            </ol>
-                        </nav>
+                        <table class="table table-striped datatable">
+                            <thead>
+                                <tr class="table-success">
+                                    <th scope="col">STT</th>
+                                    <th scope="col">Tên bài</th>
+                                    <th scope="col">Thể loại</th>
+                                    <th scope="col">Ngày tạo</th>
+                                    <th scope="col">Tuỳ chọn</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Bài 1</td>
+                                    <td>Switch</td>
+                                    <td>20-10/2021</td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#edit-examples"><i class="bi bi-pencil-fill"></i></button>
+                                        <button type="button" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Bài 1</td>
+                                    <td>Switch</td>
+                                    <td>20-10/2021</td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#edit-examples"><i class="bi bi-pencil-fill"></i></button>
+                                        <button type="button" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Bài 1</td>
+                                    <td>Switch</td>
+                                    <td>20-10/2021</td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#edit-examples"><i class="bi bi-pencil-fill"></i></button>
+                                        <button type="button" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Bài 1</td>
+                                    <td>Switch</td>
+                                    <td>20-10/2021</td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#edit-examples"><i class="bi bi-pencil-fill"></i></button>
+                                        <button type="button" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-                <!-- End Bài mẫu -->
-                <!-- Chi tiết bài mẫu -->
-                <div class="modal fade" id="largeModal" tabindex="-1">
+                <!-- End quản lý tài khoản --> 
+                <div class="modal fade" id="edit-examples" tabindex="-1">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title">Chi tiết</h5>
+                                <h5 class="modal-title">Thêm thành viên</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <form>
+                                                    <div class="row mb-3">
+                                                        <label for="inputText" class="col-sm-3 col-form-label">Tên bài</label>
+                                                        <div class="col-sm-9">
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <label for="inputText" class="col-sm-3 col-form-label">Loại bài</label>
+                                                        <div class="col-sm-9">
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <label for="inputNumber" class="col-sm-3 col-form-label">Mẫu topo mạng</label>
+                                                        <div class="col-sm-9">
+                                                          <input class="form-control" type="file" id="formFile">
+                                                        </div>
+                                                      </div>
+                                                      <div class="row mb-3">
+                                                        <label for="inputNumber" class="col-sm-3 col-form-label">Tài liệu hướng dẫn</label>
+                                                        <div class="col-sm-9">
+                                                          <input class="form-control" type="file" id="formFile">
+                                                        </div>
+                                                      </div>
+                                                      <div class="row mb-3">
+                                                        <label for="inputPassword" class="col-sm-4 col-form-label"><strong>Mô tả:</strong></label>
+                                                            <div class="quill-editor-default"></div>
+                                                      </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Huỷ</button>
+                                <button type="button" class="btn btn-primary">Lưu</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- End chi tiết bài mẫu-->
+                <!-- End thêm thành viên -->
+                <div class="modal fade" id="themnhanhthanhvien" tabindex="-1">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Thêm nhanh thành viên</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="row mb-3">
+                                            <label for="inputNumber" class="col-sm-6 col-form-label">Số thành viên</label>
+                                            <div class="col-sm-6">
+                                                <input type="number" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="row mb-3">
+                                            <label for="inputText" class="col-sm-3 col-form-label">Tiền tố bắt đầu</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                                <button type="button" class="btn btn-primary">Thêm</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End thêm nhanh thành viên -->
             </section>
             <div class="modal fade" id="createlophoc" tabindex="-1">
                 <div class="modal-dialog modal-lg">

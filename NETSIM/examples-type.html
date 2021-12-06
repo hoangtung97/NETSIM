@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <title>NETSIM - Lớp học</title>
+        <title>NETSIM - thể loại bài thực hành</title>
         <meta content="" name="description">
         <meta content="" name="keywords">
         <!-- Favicons -->
@@ -48,13 +48,13 @@
                         <i class="bi bi-search"></i>
                         </a>
                     </li>
-                    <!-- End Tìm kiếm-->
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createlophoc"><i class="bi bi-plus me-1"></i> Tạo lớp học</button>
+                    <!-- End Search Icon-->
+                    <button type="button" class="btn btn-primary"><i class="bi bi-plus me-1"></i> Tạo lớp học</button>
                     <li class="nav-item dropdown pe-3">
                         <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
                         <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
                         <span class="d-none d-md-block dropdown-toggle ps-2">Lê Sỹ Tùng</span>
-                        </a><!-- End Avatar -->
+                        </a><!-- End Profile Iamge Icon -->
                         <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
                             <li class="dropdown-header">
                                 <h6>Lê Sỹ Tùng</h6>
@@ -97,11 +97,12 @@
                                 </a>
                             </li>
                         </ul>
-                        <!-- End Dropdown Profile -->
+                        <!-- End Profile Dropdown Items -->
                     </li>
-                    <!-- End Profile -->
+                    <!-- End Profile Nav -->
                 </ul>
             </nav>
+            <!-- End Icons Navigation -->
         </header>
         <!-- End Header -->
         <!-- ======= Menu ======= -->
@@ -127,10 +128,10 @@
                 </li>
                 <!-- End Quản lý tài khoản -->
                 <li class="nav-item">
-                    <a class="nav-link" data-bs-target="#educate-nav" data-bs-toggle="collapse" href="#">
+                    <a class="nav-link collapsed" data-bs-target="#educate-nav" data-bs-toggle="collapse" href="#">
                     <i class="bi bi-book-half"></i><span>Quản lý đào tạo</span><i class="bi bi-chevron-down ms-auto"></i>
                     </a>
-                    <ul id="educate-nav" class="nav-content collapse show " data-bs-parent="#sidebar-nav">
+                    <ul id="educate-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
                         <li>
                             <a href="#" data-bs-toggle="modal" data-bs-target="#createlophoc">
                             <i class="bi bi-circle"></i><span>Tạo lớp học mới</span>
@@ -142,7 +143,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="index.html" class="active">
+                            <a href="index.html">
                             <i class="bi bi-circle"></i><span>Các lớp đang học</span>
                             </a>
                         </li>
@@ -206,12 +207,12 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link collapsed" data-bs-target="#example-nav" data-bs-toggle="collapse" href="#">
+                    <a class="nav-link" data-bs-target="#example-nav" data-bs-toggle="collapse" href="#">
                     <i class="bi bi-list-task"></i><span>Quản lý bài thực hành mẫu</span><i class="bi bi-chevron-down ms-auto"></i>
                     </a>
-                    <ul id="example-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <ul id="example-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
                         <li>
-                            <a href="examples-type.html">
+                            <a href="examples-type.html" class="active">
                             <i class="bi bi-circle"></i><span>Quản lý thể loại bài thực hành</span>
                             </a>
                         </li>
@@ -242,53 +243,161 @@
         <!-- End Menu-->
         <main id="main" class="main">
             <div class="pagetitle">
-                <h1>Quản lý đào tạo</h1>
+                <h1>Quản lý thể loại bài thực hành mẫu </h1>
                 <nav>
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Quản lý đào tạo</a></li>
-                        <li class="breadcrumb-item active">Các lớp đang học</li>
+                        <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                        <li class="breadcrumb-item active">Quản lý thể loại bài thực hành mẫu</li>
                     </ol>
                 </nav>
             </div>
             <!-- End - Tieu de -->
             <section class="section dashboard">
-                <!-- Danh sanh lop hoc -->
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div class="card">
-                            <img src="assets/img/class1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <a href="class-detail.html" class="class-link">
-                                    <h5 class="card-title">Tên lớp học</h5>
-                                </a>
-                                <p class="class-infomation">Lớp giảng dạy về kỹ thuật aaaaaaaaaaaaaaaaaaaaaaaa</p>
-                            </div>
-                        </div>
+                <!-- Quản lý tài khoản -->
+                <div class="card">
+                    <div class="card-body">
+                        <table class="table table-striped datatable">
+                            <thead>
+                                <tr class="table-success">
+                                    <th scope="col">STT</th>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Thể loại</th>
+                                    <th scope="col">Tuỳ chọn</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>THELOAI1</td>
+                                    <td>Tên loại 1</td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#edit-examples"><i class="bi bi-pencil-fill"></i></button>
+                                        <button type="button" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>THELOAI1</td>
+                                    <td>Tên loại 1</td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#edit-examples"><i class="bi bi-pencil-fill"></i></button>
+                                        <button type="button" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>THELOAI1</td>
+                                    <td>Tên loại 1</td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#edit-examples"><i class="bi bi-pencil-fill"></i></button>
+                                        <button type="button" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>THELOAI1</td>
+                                    <td>Tên loại 1</td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#edit-examples"><i class="bi bi-pencil-fill"></i></button>
+                                        <button type="button" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></button>
+                                    </td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="card">
-                            <img src="assets/img/class2.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <a href="class-detail.html" class="class-link">
-                                    <h5 class="card-title">Tên lớp học 2</h5>
-                                </a>
-                                <p class="class-infomation">Lớp giảng dạy về môn học thứ hai bbbbbbbbbbbbbbbbbbbbbbbbbb</p>
+                </div>
+                <!-- End quản lý tài khoản --> 
+                <div class="modal fade" id="edit-examples" tabindex="-1">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Thêm thành viên</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="card">
-                            <img src="assets/img/class4.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <a href="class-detail.html" class="class-link">
-                                    <h5 class="card-title">Tên lớp học 3</h5>
-                                </a>
-                                <p class="class-infomation">Lớp giảng dạy về môn học thứ hai cccccccccccccccccccccccc</p>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <form>
+                                                    <div class="row mb-3">
+                                                        <label for="inputText" class="col-sm-3 col-form-label">Tên bài</label>
+                                                        <div class="col-sm-9">
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <label for="inputText" class="col-sm-3 col-form-label">Loại bài</label>
+                                                        <div class="col-sm-9">
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <label for="inputNumber" class="col-sm-3 col-form-label">Mẫu topo mạng</label>
+                                                        <div class="col-sm-9">
+                                                          <input class="form-control" type="file" id="formFile">
+                                                        </div>
+                                                      </div>
+                                                      <div class="row mb-3">
+                                                        <label for="inputNumber" class="col-sm-3 col-form-label">Tài liệu hướng dẫn</label>
+                                                        <div class="col-sm-9">
+                                                          <input class="form-control" type="file" id="formFile">
+                                                        </div>
+                                                      </div>
+                                                      <div class="row mb-3">
+                                                        <label for="inputPassword" class="col-sm-4 col-form-label"><strong>Mô tả:</strong></label>
+                                                            <div class="quill-editor-default"></div>
+                                                      </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Huỷ</button>
+                                <button type="button" class="btn btn-primary">Lưu</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- End - Danh sach lop hoc -->
+                <!-- End thêm thành viên -->
+                <div class="modal fade" id="themnhanhthanhvien" tabindex="-1">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Thêm nhanh thành viên</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="row mb-3">
+                                            <label for="inputNumber" class="col-sm-6 col-form-label">Số thành viên</label>
+                                            <div class="col-sm-6">
+                                                <input type="number" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="row mb-3">
+                                            <label for="inputText" class="col-sm-3 col-form-label">Tiền tố bắt đầu</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                                <button type="button" class="btn btn-primary">Thêm</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End thêm nhanh thành viên -->
             </section>
             <div class="modal fade" id="createlophoc" tabindex="-1">
                 <div class="modal-dialog modal-lg">
@@ -302,6 +411,7 @@
                                 <div class="col-lg-12">
                                     <div class="card">
                                         <div class="card-body">
+                                            <!-- Tạo lớp học -->
                                             <form>
                                                 <div class="row mb-3">
                                                     <label for="inputText" class="col-sm-3 col-form-label">Tên lớp học</label>
@@ -393,11 +503,9 @@
                     </div>
                 </div>
             </div>
-            <!-- End Modal tao lop hoc-->
         </main>
         <!-- End #main -->
         <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-        <!--  JS Files -->
         <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
         <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="assets/vendor/chart.js/chart.min.js"></script>
@@ -406,7 +514,6 @@
         <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
         <script src="assets/vendor/tinymce/tinymce.min.js"></script>
         <script src="assets/vendor/php-email-form/validate.js"></script>
-        <!--  Main JS File -->
         <script src="assets/js/main.js"></script>
     </body>
 </html>
