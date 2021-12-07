@@ -48,7 +48,7 @@
                         </a>
                     </li>
                     <!-- End Tìm kiếm-->
-                    <button type="button" class="btn btn-primary"><i class="bi bi-plus me-1"></i> Tạo lớp học</button>
+                    <button type="button" class="btn btn-primary"><i class="bi bi-plus me-1"></i> Tạo khoá huấn luyện</button>
                     <li class="nav-item dropdown pe-3">
                         <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
                         <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
@@ -129,22 +129,17 @@
                     <ul id="educate-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
                         <li>
                             <a href="#" data-bs-toggle="modal" data-bs-target="#createlophoc">
-                            <i class="bi bi-circle"></i><span>Tạo lớp học mới</span>
+                            <i class="bi bi-circle"></i><span>Tạo khoá huấn luyện mới</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                            <i class="bi bi-circle"></i><span>Thêm thành viên vào lớp học</span>
+                            <i class="bi bi-circle"></i><span>Thêm học viên</span>
                             </a>
                         </li>
                         <li>
                             <a href="index.html">
-                            <i class="bi bi-circle"></i><span>Các lớp đang học</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="index.html">
-                            <i class="bi bi-circle"></i><span>Các lớp học đã xong</span>
+                            <i class="bi bi-circle"></i><span>Danh sách khoá huấn luyện</span>
                             </a>
                         </li>
                     </ul>
@@ -157,19 +152,19 @@
                     <ul id="teaching-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                         <li>
                             <a href="index.html">
-                            <i class="bi bi-circle"></i><span>Lớp học đang diễn ra</span>
+                            <i class="bi bi-circle"></i><span>Khoá huấn luyện đang diễn ra</span>
                             </a>
                         </li>
                         <li>
                             <a href="index.html">
-                            <i class="bi bi-circle"></i><span>Lớp học phụ trách</span>
+                            <i class="bi bi-circle"></i><span>Khoá huấn luyện phụ trách</span>
                             </a>
                         </li>
                     </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" data-bs-target="#classes-nav" data-bs-toggle="collapse" href="#">
-                    <i class="bi bi-layout-text-window-reverse"></i><span>Các lớp tham gia học</span><i class="bi bi-chevron-down ms-auto"></i>
+                    <i class="bi bi-layout-text-window-reverse"></i><span>Các khoá tham gia</span><i class="bi bi-chevron-down ms-auto"></i>
                     </a>
                     <ul id="classes-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
                         <li>
@@ -238,10 +233,10 @@
         <!-- End Menu-->
         <main id="main" class="main">
             <div class="pagetitle">
-                <h1>Các lớp học tham gia</h1>
+                <h1>Các khoá huấn luyện tham gia</h1>
                 <nav>
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Các lớp tham gia học</a></li>
+                        <li class="breadcrumb-item"><a href="#">Các khoá tham gia</a></li>
                         <li class="breadcrumb-item active">Lớp 1</li>
                     </ol>
                 </nav>
@@ -249,18 +244,19 @@
             <!-- End - Tieu de -->
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Lớp 1</h5>
+                    <h5 class="card-title">Khoá huấn luyện 1</h5>
                     <!-- Thông tin lớp học -->
                     <ul class="nav nav-pills mb-4 justify-content-center" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link  active" id="info-tab" data-bs-toggle="pill" data-bs-target="#info" type="button" role="tab" aria-controls="info" aria-selected="true">Thông tin lớp</button>
+                            <button class="nav-link  active" id="details-tab" data-bs-toggle="pill" data-bs-target="#details" type="button" role="tab" aria-controls="details" aria-selected="false">Thống kê</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="details-tab" data-bs-toggle="pill" data-bs-target="#details" type="button" role="tab" aria-controls="details" aria-selected="false">Thống kê</button>
+                            <button class="nav-link" id="info-tab" data-bs-toggle="pill" data-bs-target="#info" type="button" role="tab" aria-controls="info" aria-selected="true">Thông tin lớp</button>
                         </li>
+                        
                     </ul>
                     <div class="tab-content pt-2" id="myTabContent">
-                        <div class="tab-pane fade show active" id="info" role="tabpanel" aria-labelledby="info-tab">
+                        <div class="tab-pane fade" id="info" role="tabpanel" aria-labelledby="info-tab">
                             <div class="card">
                                 <div class="card-header">
                                     <div class="button-group">
@@ -320,7 +316,6 @@
                                 </div>
                                 <!-- Các nhóm tham gia -->
                                 <div class="card-header">
-                                    <h5>Các nhóm tham gia</h5>
                                 </div>
                                 <div class="card-body">
                                     <br>
@@ -331,7 +326,7 @@
                                                 Nhóm 1
                                                 </button>
                                             </h2>
-                                            <div id="collapseOne" class="accordion-collapse collapse show " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                                 <div class="accordion-body">
                                                     <div class="button-group">
                                                         <button type="button" class="btn btn-secondary btn-sm " data-bs-target="#thanhviennhom" data-bs-toggle="modal">Thành viên nhóm <i class="bi bi-person"></i></button>
@@ -394,11 +389,70 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <hr>
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button collapsed button-group-collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseOne" >
+                                                Bài thực hành mẫu của giáo viên
+                                                </button>
+                                            </h2>
+                                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <hr class="col-lg-12">
+                                                    <table class="table table-borderless">
+                                                        <thead>
+                                                            <tr class="table-success">
+                                                                <th scope="col">STT</th>
+                                                                <th scope="col">Tên bài thực hành</th>
+                                                                <th scope="col">Tuỳ chọn</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="row">1</th>
+                                                                <td>Bài thực hành số 01</td>
+                                                                <td>
+                                                                    <button type="button" class="btn btn-secondary btn-sm"><i class="bi bi-download"></i></button>
+                                                                    <button type="button" class="btn btn-secondary btn-sm"><i class="bi bi-box-arrow-right"></i></button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">2</th>
+                                                                <td>Bài thực hành số 02</td>
+                                                                <td>
+                                                                    <button type="button" class="btn btn-secondary btn-sm"><i class="bi bi-download"></i></button>
+                                                                    <button type="button" class="btn btn-secondary btn-sm"><i class="bi bi-box-arrow-right"></i></button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">3</th>
+                                                                <td>Bài thực hành số 03</td>
+                                                                <td>
+                                                                    <button type="button" class="btn btn-secondary btn-sm"><i class="bi bi-download"></i></button>
+                                                                    <button type="button" class="btn btn-secondary btn-sm"><i class="bi bi-box-arrow-right"></i></button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">3</th>
+                                                                <td>Bài thực hành số 03</td>
+                                                                <td>
+                                                                    <button type="button" class="btn btn-secondary btn-sm"><i class="bi bi-download"></i></button>
+                                                                    <button type="button" class="btn btn-secondary btn-sm"><i class="bi bi-box-arrow-right"></i></button>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <!-- End - Danh sach nhom -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <!-- End Các nhóm tham gia-->
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="details" role="tabpanel" aria-labelledby="details-tab">
+                        <div class="tab-pane fade show active" id="details" role="tabpanel" aria-labelledby="details-tab">
                             <div class="row">
                                 <div class="col-lg-8">
                                     <div class="card">
@@ -747,7 +801,7 @@
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title">Tạo lớp học</h5>
+                            <h5 class="modal-title">Tạo khoá huấn luyện</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
@@ -758,19 +812,7 @@
                                             <!-- Tạo lớp học -->
                                             <form>
                                                 <div class="row mb-3">
-                                                    <label for="inputText" class="col-sm-3 col-form-label">Tên lớp học</label>
-                                                    <div class="col-sm-9">
-                                                        <input type="text" class="form-control">
-                                                    </div>
-                                                </div>
-                                                <div class="row mb-3">
-                                                    <label for="inputText" class="col-sm-3 col-form-label">Chuyên ngành</label>
-                                                    <div class="col-sm-9">
-                                                        <input type="text" class="form-control">
-                                                    </div>
-                                                </div>
-                                                <div class="row mb-3">
-                                                    <label for="inputText" class="col-sm-3 col-form-label">Phòng</label>
+                                                    <label for="inputText" class="col-sm-3 col-form-label">Tên khoá huấn luyện</label>
                                                     <div class="col-sm-9">
                                                         <input type="text" class="form-control">
                                                     </div>
@@ -788,7 +830,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="row mb-3">
-                                                    <label for="inputPassword" class="col-sm-3 col-form-label">Mô tả lớp học</label>
+                                                    <label for="inputPassword" class="col-sm-3 col-form-label">Mô tả khoá huấn luyện</label>
                                                     <div class="col-sm-9">
                                                         <textarea class="form-control" style="height: 100px"></textarea>
                                                     </div>

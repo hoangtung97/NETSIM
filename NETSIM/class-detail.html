@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <title>NETSIM - Chi tiết lớp học</title>
+        <title>NETSIM - Chi tiết khoá huấn luyện</title>
         <meta content="" name="description">
         <meta content="" name="keywords">
         <!-- Favicons -->
@@ -48,7 +48,7 @@
                         <i class="bi bi-search"></i>
                         </a>
                     </li>
-                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#createlophoc"><i class="bi bi-file-earmark-plus me-1"></i> Tạo lớp học</button>
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#createlophoc"><i class="bi bi-file-earmark-plus me-1"></i> Tạo khoá huấn luyện</button>
                     <!-- End Icon Tìm kiếm-->
                     <li class="nav-item dropdown pe-3">
                         <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
@@ -133,22 +133,17 @@
                     <ul id="educate-nav" class="nav-content collapse show " data-bs-parent="#sidebar-nav">
                         <li>
                             <a href="#" data-bs-toggle="modal" data-bs-target="#createlophoc">
-                            <i class="bi bi-circle"></i><span>Tạo lớp học mới</span>
+                            <i class="bi bi-circle"></i><span>Tạo khoá huấn luyện mới</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                            <i class="bi bi-circle"></i><span>Thêm thành viên vào lớp học</span>
+                            <i class="bi bi-circle"></i><span>Thêm học viên</span>
                             </a>
                         </li>
                         <li>
                             <a href="index.html" class="active">
-                            <i class="bi bi-circle"></i><span>Các lớp đang học</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="index.html">
-                            <i class="bi bi-circle"></i><span>Các lớp học đã xong</span>
+                            <i class="bi bi-circle"></i><span>Danh sách khoá huấn luyện</span>
                             </a>
                         </li>
                     </ul>
@@ -161,29 +156,29 @@
                     <ul id="teaching-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                         <li>
                             <a href="index.html">
-                            <i class="bi bi-circle"></i><span>Lớp học đang diễn ra</span>
+                            <i class="bi bi-circle"></i><span>Khoá huấn luyện đang diễn ra</span>
                             </a>
                         </li>
                         <li>
                             <a href="index.html">
-                            <i class="bi bi-circle"></i><span>Lớp học phụ trách</span>
+                            <i class="bi bi-circle"></i><span>Khoá huấn luyện phụ trách</span>
                             </a>
                         </li>
                     </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link collapsed" data-bs-target="#classes-nav" data-bs-toggle="collapse" href="#">
-                    <i class="bi bi-layout-text-window-reverse"></i><span>Các lớp tham gia học</span><i class="bi bi-chevron-down ms-auto"></i>
+                    <i class="bi bi-layout-text-window-reverse"></i><span>Các Khoá tham gia</span><i class="bi bi-chevron-down ms-auto"></i>
                     </a>
                     <ul id="classes-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
                         <li>
                             <a href="student-classes.html">
-                            <i class="bi bi-circle"></i><span>Lớp 1</span>
+                            <i class="bi bi-circle"></i><span>Khoá 1</span>
                             </a>
                         </li>
                         <li>
                             <a href="student-classes.html">
-                            <i class="bi bi-circle"></i><span>Lớp 2</span>
+                            <i class="bi bi-circle"></i><span>Khoá 2</span>
                             </a>
                         </li>
                     </ul>
@@ -242,12 +237,12 @@
         <!-- End Menu-->
         <main id="main" class="main">
             <div class="pagetitle">
-                <h1>Lớp học</h1>
+                <h1>Khoá huấn luyện</h1>
                 <nav>
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Lớp học</a></li>
-                        <li class="breadcrumb-item active">Chi tiết lớp học</li>
-                        <li class="breadcrumb-item active">Lớp 1</li>
+                        <li class="breadcrumb-item"><a href="index.html">Khoá huấn luyện</a></li>
+                        <li class="breadcrumb-item active">Chi tiết khoá huấn luyện</li>
+                        <li class="breadcrumb-item active">Khoá 1</li>
                     </ol>
                 </nav>
             </div>
@@ -260,7 +255,7 @@
                             <button class="nav-link active" id="pills-trangchu-tab" data-bs-toggle="pill" data-bs-target="#pills-trangchu" type="button" role="tab" aria-controls="pills-trangchu" aria-selected="true">Trang chủ</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="pills-danhsach-tab" data-bs-toggle="pill" data-bs-target="#pills-danhsach" type="button" role="tab" aria-controls="pills-danhsach" aria-selected="false">Danh sách lớp</button>
+                            <button class="nav-link" id="pills-danhsach-tab" data-bs-toggle="pill" data-bs-target="#pills-danhsach" type="button" role="tab" aria-controls="pills-danhsach" aria-selected="false">Thông tin khoá huấn luyện</button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="pills-theodoi-tab" data-bs-toggle="pill" data-bs-target="#pills-theodoi" type="button" role="tab" aria-controls="pills-theodoi" aria-selected="false">Theo dõi</button>
@@ -276,7 +271,7 @@
                                         <div class="card-body">
                                             <div class="row mb-3">
                                                 <div class="col-sm-2">
-                                                    <h4 class="class-title-detail">Tên lớp học 1</h4>
+                                                    <h4 class="class-title-detail">Tên khoá huấn luyện 1</h4>
                                                 </div>
                                                 <div class="col-sm-10" style="padding-top: 20px;">
                                                     <button style="float: right;" type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#verticalycentered"><i class="bi bi-info-circle"></i></button>
@@ -285,12 +280,12 @@
                                                     <div class="modal-dialog modal-dialog-centered">
                                                         <div class="modal-content">
                                                             <div class="modal-header">
-                                                                <h5 class="modal-title">Thông tin lớp học</h5>
+                                                                <h5 class="modal-title">Thông tin khoá huấn luyện</h5>
                                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                             </div>
                                                             <div class="modal-body">
                                                                 <div class="row mb-3">
-                                                                    <label for="inputText" class="col-sm-2 col-form-label" style="font-weight: 700;">Mã lớp</label>
+                                                                    <label for="inputText" class="col-sm-2 col-form-label" style="font-weight: 700;">Mã khoá</label>
                                                                     <div class="col-sm-6">
                                                                         <input type="text" class="form-control" value="KHGKURJ" disabled id="myInput">
                                                                     </div>
@@ -319,7 +314,7 @@
                                                 </div>
                                                 <!-- End Vertically centered Modal-->
                                             </div>
-                                            <p class="class-infomation-detail">Lớp giảng dạy về kỹ thuật </p>
+                                            <p class="class-infomation-detail">Khoá huấn luyện giảng dạy về kỹ thuật </p>
                                         </div>
                                     </div>
                                 </div>
@@ -373,7 +368,7 @@
                                     <div class="modal-dialog modal-lg">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h5 class="modal-title">Thêm học viên vào lớp</h5>
+                                                <h5 class="modal-title">Thêm học viên vào khoá huấn luyện</h5>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body">
@@ -437,7 +432,7 @@
                                         <td style="font-weight: 700; width: 30%;">Lê Sỹ Tùng</td>
                                         <td>HV01</td>
                                         <td>Học viện Kỹ Thuật quân sự</td>
-                                        <td>Lớp 1</td>
+                                        <td>Khoá huấn luyện 1</td>
                                         <td><span class="badge bg-success">Trực tuyến</span></td>
                                         <td><button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#baithuchanhhocvien">Bài thực hành <i class="bi bi-arrow-right me-1"></i> </button></td>
                                     </tr>
@@ -447,7 +442,7 @@
                                         <td style="font-weight: 700; width: 30%;">Lê Sỹ Tùng</td>
                                         <td>HV01</td>
                                         <td>Học viện Kỹ Thuật quân sự</td>
-                                        <td>Lớp 1</td>
+                                        <td>Khoá huấn luyện 1</td>
                                         <td><span class="badge bg-success">Trực tuyến</span></td>
                                         <td><button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#baithuchanhhocvien">Bài thực hành <i class="bi bi-arrow-right me-1"></i> </button></td>
                                     </tr>
@@ -457,7 +452,7 @@
                                         <td style="font-weight: 700; width: 30%;">Lê Sỹ Tùng</td>
                                         <td>HV01</td>
                                         <td>Học viện Kỹ Thuật quân sự</td>
-                                        <td>Lớp 1</td>
+                                        <td>Khoá huấn luyện 1</td>
                                         <td><span class="badge bg-danger">Ngoại tuyến</span></td>
                                         <td><button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#baithuchanhhocvien">Bài thực hành <i class="bi bi-arrow-right me-1"></i> </button></td>
                                     </tr>
@@ -870,7 +865,7 @@
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title">Tạo lớp học</h5>
+                            <h5 class="modal-title">Tạo Khoá huấn luyện</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
@@ -881,19 +876,7 @@
                                             <!-- Tạo lớp học -->
                                             <form>
                                                 <div class="row mb-3">
-                                                    <label for="inputText" class="col-sm-3 col-form-label">Tên lớp học</label>
-                                                    <div class="col-sm-9">
-                                                        <input type="text" class="form-control">
-                                                    </div>
-                                                </div>
-                                                <div class="row mb-3">
-                                                    <label for="inputText" class="col-sm-3 col-form-label">Chuyên ngành</label>
-                                                    <div class="col-sm-9">
-                                                        <input type="text" class="form-control">
-                                                    </div>
-                                                </div>
-                                                <div class="row mb-3">
-                                                    <label for="inputText" class="col-sm-3 col-form-label">Phòng</label>
+                                                    <label for="inputText" class="col-sm-3 col-form-label">Tên Khoá huấn luyện</label>
                                                     <div class="col-sm-9">
                                                         <input type="text" class="form-control">
                                                     </div>

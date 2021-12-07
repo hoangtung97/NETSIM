@@ -49,7 +49,7 @@
                         </a>
                     </li>
                     <!-- End Search Icon-->
-                    <button type="button" class="btn btn-primary"><i class="bi bi-plus me-1"></i> Tạo lớp học</button>
+                    <button type="button" class="btn btn-primary"><i class="bi bi-plus me-1"></i> Tạo Khoá huấn luyện</button>
                     <li class="nav-item dropdown pe-3">
                         <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
                         <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
@@ -134,22 +134,17 @@
                     <ul id="educate-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
                         <li>
                             <a href="#" data-bs-toggle="modal" data-bs-target="#createlophoc">
-                            <i class="bi bi-circle"></i><span>Tạo lớp học mới</span>
+                            <i class="bi bi-circle"></i><span>Tạo Khoá huấn luyện mới</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                            <i class="bi bi-circle"></i><span>Thêm thành viên vào lớp học</span>
+                            <i class="bi bi-circle"></i><span>Thêm học viên</span>
                             </a>
                         </li>
                         <li>
                             <a href="index.html">
-                            <i class="bi bi-circle"></i><span>Các lớp đang học</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="index.html">
-                            <i class="bi bi-circle"></i><span>Các lớp học đã xong</span>
+                            <i class="bi bi-circle"></i><span>Danh sách Khoá huấn luyện</span>
                             </a>
                         </li>
                     </ul>
@@ -162,29 +157,29 @@
                     <ul id="teaching-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                         <li>
                             <a href="index.html">
-                            <i class="bi bi-circle"></i><span>Lớp học đang diễn ra</span>
+                            <i class="bi bi-circle"></i><span>Khoá huấn luyện đang diễn ra</span>
                             </a>
                         </li>
                         <li>
                             <a href="index.html">
-                            <i class="bi bi-circle"></i><span>Lớp học phụ trách</span>
+                            <i class="bi bi-circle"></i><span>Khoá huấn luyện phụ trách</span>
                             </a>
                         </li>
                     </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link collapsed" data-bs-target="#classes-nav" data-bs-toggle="collapse" href="#">
-                    <i class="bi bi-layout-text-window-reverse"></i><span>Các lớp tham gia học</span><i class="bi bi-chevron-down ms-auto"></i>
+                    <i class="bi bi-layout-text-window-reverse"></i><span>Các khoá tham gia</span><i class="bi bi-chevron-down ms-auto"></i>
                     </a>
                     <ul id="classes-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
                         <li>
                             <a href="student-classes.html">
-                            <i class="bi bi-circle"></i><span>Lớp 1</span>
+                            <i class="bi bi-circle"></i><span>Khoá huấn luyện 1</span>
                             </a>
                         </li>
                         <li>
                             <a href="student-classes.html">
-                            <i class="bi bi-circle"></i><span>Lớp 2</span>
+                            <i class="bi bi-circle"></i><span>Khoá huấn luyện 2</span>
                             </a>
                         </li>
                     </ul>
@@ -412,7 +407,7 @@
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title">Tạo lớp học</h5>
+                            <h5 class="modal-title">Tạo khoá huấn luyện</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
@@ -423,19 +418,7 @@
                                             <!-- Tạo lớp học -->
                                             <form>
                                                 <div class="row mb-3">
-                                                    <label for="inputText" class="col-sm-3 col-form-label">Tên lớp học</label>
-                                                    <div class="col-sm-9">
-                                                        <input type="text" class="form-control">
-                                                    </div>
-                                                </div>
-                                                <div class="row mb-3">
-                                                    <label for="inputText" class="col-sm-3 col-form-label">Chuyên ngành</label>
-                                                    <div class="col-sm-9">
-                                                        <input type="text" class="form-control">
-                                                    </div>
-                                                </div>
-                                                <div class="row mb-3">
-                                                    <label for="inputText" class="col-sm-3 col-form-label">Phòng</label>
+                                                    <label for="inputText" class="col-sm-3 col-form-label">Tên khoá huấn luyện</label>
                                                     <div class="col-sm-9">
                                                         <input type="text" class="form-control">
                                                     </div>
@@ -453,7 +436,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="row mb-3">
-                                                    <label for="inputPassword" class="col-sm-3 col-form-label">Mô tả lớp học</label>
+                                                    <label for="inputPassword" class="col-sm-3 col-form-label">Mô tả khoá huấn luyện</label>
                                                     <div class="col-sm-9">
                                                         <textarea class="form-control" style="height: 100px"></textarea>
                                                     </div>
