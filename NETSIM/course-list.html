@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <title>NETSIM - Quản lý quyền</title>
+        <title>NETSIM - Danh sách khoá huấn luyện</title>
         <meta content="" name="description">
         <meta content="" name="keywords">
         <!-- Favicons -->
@@ -48,13 +48,13 @@
                         <i class="bi bi-search"></i>
                         </a>
                     </li>
-                    <!-- End Search Icon-->
-                    <button type="button" class="btn btn-primary"><i class="bi bi-plus me-1"></i> Tạo lkhoá huấn luyện</button>
+                    <!-- End Tìm kiếm-->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createlophoc"><i class="bi bi-plus me-1"></i> Tạo khoá huấn luyện</button>
                     <li class="nav-item dropdown pe-3">
                         <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
                         <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
                         <span class="d-none d-md-block dropdown-toggle ps-2">Lê Sỹ Tùng</span>
-                        </a><!-- End Profile Iamge Icon -->
+                        </a><!-- End Avatar -->
                         <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
                             <li class="dropdown-header">
                                 <h6>Lê Sỹ Tùng</h6>
@@ -82,7 +82,7 @@
                                 <hr class="dropdown-divider">
                             </li>
                             <li>
-                                <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                                <a class="dropdown-item d-flex align-items-center" href="#">
                                 <i class="bi bi-question-circle"></i>
                                 <span>Trợ giúp</span>
                                 </a>
@@ -91,18 +91,17 @@
                                 <hr class="dropdown-divider">
                             </li>
                             <li>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                <a class="dropdown-item d-flex align-items-center" href="pages-login.html">
                                 <i class="bi bi-box-arrow-right"></i>
                                 <span>Đăng xuất</span>
                                 </a>
                             </li>
                         </ul>
-                        <!-- End Profile Dropdown Items -->
+                        <!-- End Dropdown Profile -->
                     </li>
-                    <!-- End Profile Nav -->
+                    <!-- End Profile -->
                 </ul>
             </nav>
-            <!-- End Icons Navigation -->
         </header>
         <!-- End Header -->
         <!-- ======= Menu ======= -->
@@ -110,17 +109,17 @@
         <aside id="sidebar" class="sidebar">
             <ul class="sidebar-nav" id="sidebar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" data-bs-target="#account-nav" data-bs-toggle="collapse" href="#">
+                    <a class="nav-link collapsed" data-bs-target="#account-nav" data-bs-toggle="collapse" href="#">
                     <i class="bi bi-caret-right-square"></i><span>Quản lý đăng nhập</span><i class="bi bi-chevron-down ms-auto"></i>
                     </a>
-                    <ul id="account-nav" class="nav-content collapse show " data-bs-parent="#sidebar-nav">
+                    <ul id="account-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                         <li>
                             <a href="manage-accounts.html">
                             <i class="bi bi-circle"></i><span>Quản lý tài khoản</span>
                             </a>
                         </li>
                         <li>
-                            <a href="manage-roles.html" class="active">
+                            <a href="manage-roles.html">
                             <i class="bi bi-circle"></i><span>Quản lý quyền</span>
                             </a>
                         </li>
@@ -128,10 +127,10 @@
                 </li>
                 <!-- End Quản lý tài khoản -->
                 <li class="nav-item">
-                    <a class="nav-link collapsed" data-bs-target="#educate-nav" data-bs-toggle="collapse" href="#">
+                    <a class="nav-link" data-bs-target="#educate-nav" data-bs-toggle="collapse" href="#">
                     <i class="bi bi-book-half"></i><span>Quản lý đào tạo</span><i class="bi bi-chevron-down ms-auto"></i>
                     </a>
-                    <ul id="educate-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+                    <ul id="educate-nav" class="nav-content collapse show " data-bs-parent="#sidebar-nav">
                         <li>
                             <a href="#" data-bs-toggle="modal" data-bs-target="#createlophoc">
                             <i class="bi bi-circle"></i><span>Tạo khoá huấn luyện mới</span>
@@ -143,7 +142,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="course-list.html">
+                            <a href="course-list.html" class="active">
                             <i class="bi bi-circle"></i><span>Danh sách khoá huấn luyện</span>
                             </a>
                         </li>
@@ -174,12 +173,12 @@
                     <ul id="classes-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
                         <li>
                             <a href="student-classes.html">
-                            <i class="bi bi-circle"></i><span>Lớp 1</span>
+                            <i class="bi bi-circle"></i><span>Khoá huấn luyện 1</span>
                             </a>
                         </li>
                         <li>
                             <a href="student-classes.html">
-                            <i class="bi bi-circle"></i><span>Lớp 2</span>
+                            <i class="bi bi-circle"></i><span>Khoá huấn luyện 2</span>
                             </a>
                         </li>
                     </ul>
@@ -205,7 +204,7 @@
                     <a class="nav-link collapsed" data-bs-target="#example-nav" data-bs-toggle="collapse" href="#">
                     <i class="bi bi-list-task"></i><span>Quản lý bài thực hành mẫu</span><i class="bi bi-chevron-down ms-auto"></i>
                     </a>
-                    <ul id="example-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+                    <ul id="example-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                         <li>
                             <a href="examples-type.html">
                             <i class="bi bi-circle"></i><span>Quản lý thể loại bài thực hành</span>
@@ -238,77 +237,228 @@
         <!-- End Menu-->
         <main id="main" class="main">
             <div class="pagetitle">
-                <h1>Quản lý đăng nhập</h1>
+                <h1>Quản lý đào tạo</h1>
                 <nav>
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Quản lý đăng nhập</a></li>
-                        <li class="breadcrumb-item active">Quản lý quyền</li>
+                        <li class="breadcrumb-item"><a href="index.html">Quản lý đào tạo</a></li>
+                        <li class="breadcrumb-item active">Danh sách khoá huấn luyện</li>
                     </ol>
                 </nav>
             </div>
             <!-- End - Tieu de -->
             <section class="section dashboard">
-                <!-- Quản lý quyền -->
+                <!-- Danh sanh lop hoc -->
+                <!-- Quản lý tài khoản -->
                 <div class="card">
                     <div class="card-body">
                         <table class="table table-striped datatable">
                             <thead>
                                 <tr class="table-success">
                                     <th scope="col">STT</th>
-                                    <th scope="col">Họ và tên</th>
-                                    <th scope="col">Username</th>
-                                    <th scope="col">Đơn vị</th>
-                                    <th scope="col">Quyền</th>
+                                    <th scope="col">Tên khoá huấn luyện</th>
+                                    <th scope="col">Ngày bắt đầu</th>
+                                    <th scope="col">Ngày kết thúc</th>
+                                    <th scope="col">Trạng thái</th>
                                     <th scope="col">Tuỳ chọn</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Lê Sỹ Tùng</td>
-                                    <td>tung123</td>
-                                    <td>Hoc viện Kỹ thuật quân sự</td>
-                                    <td><span class="badge bg-warning text-dark">Cán bộ quản lý</span></td>
+                                    <td>Khoá huấn luyện 1</td>
+                                    <td>20-11-2021</td>
+                                    <td>20-12-2021</td>
+                                    <td><span class="badge bg-warning text-dark">Đang huấn luyện</span></td>
                                     <td>
-                                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#tuychonquyen"><i class="bi bi-person-lines-fill"></i></button>
+                                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#edit-course"><i class="bi bi-pencil-fill"></i></button>
+                                        <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#addHocvien"><i class="bi bi-person-plus"></i></button>
+                                        <button type="button" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></button>
+                                        
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">2</th>
-                                    <td>Lê Sỹ Tùng</td>
-                                    <td>tung123</td>
-                                    <td>Hoc viện Kỹ thuật quân sự</td>
-                                    <td><span class="badge bg-danger">Admin</span></td>
+                                    <th scope="row">1</th>
+                                    <td>Khoá huấn luyện 1</td>
+                                    <td>20-11-2021</td>
+                                    <td>20-12-2021</td>
+                                    <td><span class="badge bg-secondary">Chưa bắt đầu</span></td>
                                     <td>
-                                        <button type="button" class="btn btn-primary btn-sm"><i class="bi bi-person-lines-fill"></i></button>
+                                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#edit-course"><i class="bi bi-pencil-fill"></i></button>
+                                        <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#addHocvien"><i class="bi bi-person-plus"></i></button>
+                                        <button type="button" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></button>
+                                        
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">3</th>
-                                    <td>Lê Sỹ Tùng</td>
-                                    <td>tung123</td>
-                                    <td>Hoc viện Kỹ thuật quân sự</td>
-                                    <td><span class="badge bg-success">Giáo viên</span></td>
+                                    <th scope="row">1</th>
+                                    <td>Khoá huấn luyện 1</td>
+                                    <td>20-11-2021</td>
+                                    <td>20-12-2021</td>
+                                    <td><span class="badge bg-danger">Quá hạn</span></td>
                                     <td>
-                                        <button type="button" class="btn btn-primary btn-sm"><i class="bi bi-person-lines-fill"></i></button>
+                                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#edit-course"><i class="bi bi-pencil-fill"></i></button>
+                                        <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#addHocvien"><i class="bi bi-person-plus"></i></button>
+                                        <button type="button" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></button>
+                                        
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">3</th>
-                                    <td>Lê Sỹ Tùng</td>
-                                    <td>tung123</td>
-                                    <td>Hoc viện Kỹ thuật quân sự</td>
-                                    <td><span class="badge bg-info text-dark">Học viên</span></td>
+                                    <th scope="row">1</th>
+                                    <td>Khoá huấn luyện 1</td>
+                                    <td>20-11-2021</td>
+                                    <td>20-12-2021</td>
+                                    <td><span class="badge bg-success">Kết thúc</span></td>
                                     <td>
-                                        <button type="button" class="btn btn-primary btn-sm"><i class="bi bi-person-lines-fill"></i></button>
+                                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#edit-course"><i class="bi bi-pencil-fill"></i></button>
+                                        <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#addHocvien"><i class="bi bi-person-plus"></i></button>
+                                        <button type="button" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></button>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Khoá huấn luyện 1</td>
+                                    <td>20-11-2021</td>
+                                    <td>20-12-2021</td>
+                                    <td><span class="badge bg-warning text-dark">Đang huấn luyện</span></td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#edit-course"><i class="bi bi-pencil-fill"></i></button>
+                                        <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#addHocvien"><i class="bi bi-person-plus"></i></button>
+                                        <button type="button" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></button>
+                                        
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
-                <!-- End quản lý quyền -->
+                <!-- End quản lý tài khoản -->
+
+
+
             </section>
+
+            <div class="modal fade" id="addHocvien" tabindex="-1">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Thêm học viên vào khoá huấn luyện</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" placeholder="Nhập tên học viên">
+                                </div>
+                                <div class="col-sm-4">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Sắp xếp theo</option>
+                                        <option value="1">Đơn vị</option>
+                                        <option value="2">A → Z</option>
+                                        <option value="3">Z → A</option>
+                                    </select>
+                                </div>
+                                <br><br>
+                                <div class="col-sm-12">
+                                    <div class="card" style="padding-top: 5px;">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                Nguyễn Văn Nam
+                                            </li>
+                                            <li class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                Lê Sỹ Tùng
+                                            </li>
+                                            <li class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                Trần Thị B
+                                            </li>
+                                            <li class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                Trần Thị B
+                                            </li>
+                                            <li class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                Trần Thị B
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                            <button type="button" class="btn btn-primary">Thêm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Modal thêm học viên-->
+
+            <div class="modal fade" id="edit-course" tabindex="-1">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Cập nhật khoá huấn luyện</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <form>
+                                                <div class="row mb-3">
+                                                    <label for="inputText" class="col-sm-3 col-form-label">Tên khoá huấn luyện</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <label for="inputDate" class="col-sm-3 col-form-label">Ngày bắt đầu</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="date" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <label for="inputDate" class="col-sm-3 col-form-label">Ngày kết thúc</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="date" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <label for="inputPassword" class="col-sm-3 col-form-label">Mô tả khoá huấn luyện</label>
+                                                    <div class="col-sm-9">
+                                                        <textarea class="form-control" style="height: 100px"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <label for="inputPassword" class="col-sm-3 col-form-label">Trạng thái</label>
+                                                    <div class="col-sm-9">
+                                                        <select class="form-select" aria-label="Trạng thái">
+                                                            <option value="1">Chưa bắt đầu</option>
+                                                            <option value="2">Đang huấn luyện</option>
+                                                            <option value="3">Hoàn thành</option>
+                                                            <option value="3">Kết thúc</option>
+                                                          </select>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                            <button type="button" class="btn btn-primary">Cập nhật</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Modal edit khoa huan luyen-->
+
             <div class="modal fade" id="createlophoc" tabindex="-1">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
@@ -321,7 +471,6 @@
                                 <div class="col-lg-12">
                                     <div class="card">
                                         <div class="card-body">
-                                            <!-- Tạo lớp học -->
                                             <form>
                                                 <div class="row mb-3">
                                                     <label for="inputText" class="col-sm-3 col-form-label">Tên khoá huấn luyện</label>
@@ -401,58 +550,11 @@
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="tuychonquyen" tabindex="-1">
-                <div class="modal-dialog modal-md">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Tuỷ chỉnh quyền người dùng</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="radio" name="gridRadios" id="gridRadios1" value="option1" aria-label="...">
-                                    <label class="form-check-label" for="gridRadios1">
-                                    Không xác định
-                                    </label>
-                                </li>
-                                <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="radio" name="gridRadios" id="gridRadios2" value="option2" aria-label="...">
-                                    <label class="form-check-label" for="gridRadios2">
-                                    Admin
-                                    </label>
-                                </li>
-                                <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="radio" name="gridRadios" id="gridRadios3" value="option3" aria-label="...">
-                                    <label class="form-check-label" for="gridRadios3">
-                                    Cán bộ quản lý
-                                    </label>
-                                </li>
-                                <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="radio" name="gridRadios" id="gridRadios4" value="option4" aria-label="...">
-                                    <label class="form-check-label" for="gridRadios4">
-                                    Giáo viên
-                                    </label>
-                                </li>
-                                <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="radio" name="gridRadios" id="gridRadios5" value="option5" aria-label="...">
-                                    <label class="form-check-label" for="gridRadios5">
-                                    Học viên
-                                    </label>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Huỷ</button>
-                            <button type="button" class="btn btn-primary">Lưu</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End Small Modal-->
+            <!-- End Modal tao lop hoc-->
         </main>
         <!-- End #main -->
         <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+        <!--  JS Files -->
         <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
         <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="assets/vendor/chart.js/chart.min.js"></script>
@@ -461,6 +563,7 @@
         <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
         <script src="assets/vendor/tinymce/tinymce.min.js"></script>
         <script src="assets/vendor/php-email-form/validate.js"></script>
+        <!--  Main JS File -->
         <script src="assets/js/main.js"></script>
     </body>
 </html>
