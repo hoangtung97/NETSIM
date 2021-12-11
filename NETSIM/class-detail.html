@@ -155,12 +155,12 @@
                     </a>
                     <ul id="teaching-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                         <li>
-                            <a href="index.html">
+                            <a href="course-inprogress.html">
                             <i class="bi bi-circle"></i><span>Khoá huấn luyện đang diễn ra</span>
                             </a>
                         </li>
                         <li>
-                            <a href="index.html">
+                            <a href="course-end.html">
                             <i class="bi bi-circle"></i><span>Khoá huấn luyện phụ trách</span>
                             </a>
                         </li>
@@ -184,10 +184,10 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link collapsed" data-bs-target="#example-nav" data-bs-toggle="collapse" href="#">
+                    <a class="nav-link collapsed" data-bs-target="#practice-nav" data-bs-toggle="collapse" href="#">
                     <i class="bi bi-safe2"></i><span>Quản lý thực hành</span><i class="bi bi-chevron-down ms-auto"></i>
                     </a>
-                    <ul id="example-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <ul id="practice-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                         <li>
                             <a href="practice-manage.html">
                             <i class="bi bi-circle"></i><span>Thống kê</span>
@@ -258,7 +258,7 @@
                             <button class="nav-link" id="pills-danhsach-tab" data-bs-toggle="pill" data-bs-target="#pills-danhsach" type="button" role="tab" aria-controls="pills-danhsach" aria-selected="false">Thông tin khoá huấn luyện</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="pills-theodoi-tab" data-bs-toggle="pill" data-bs-target="#pills-theodoi" type="button" role="tab" aria-controls="pills-theodoi" aria-selected="false">Theo dõi</button>
+                            <button class="nav-link" id="pills-theodoi-tab" data-bs-toggle="pill" data-bs-target="#pills-theodoi" type="button" role="tab" aria-controls="pills-theodoi" aria-selected="false">Thông tin nhóm</button>
                         </li>
                     </ul>
                     <div class="tab-content pt-2" id="myTabContent">
@@ -467,8 +467,8 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div class="row mb-3 group-header">
-                                        <h4 class="col-sm-8 col-form-label" style="font-weight: 700;">Danh sách nhóm</h4>
-                                        <div class="col-sm-4">
+                                        <h4 class="col-sm-6 col-form-label" style="font-weight: 700;">Danh sách nhóm</h4>
+                                        <div class="col-sm-6">
                                             <div class="button-group">
                                                 <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#taonhom"><i class="bi bi-file-earmark-plus me-1" ></i>Tạo nhóm</button>
                                                 <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#taonhomnhanh" ><i class="bi bi-file-earmark-plus-fill me-1" ></i>Tạo nhóm nhanh</button>
@@ -589,6 +589,8 @@
                                                 <div class="accordion-body">
                                                     <!-- Danh sach nhom -->
                                                     <button type="button" class="btn btn-primary btn-sm" data-bs-target="#baithuchanhnhom" data-bs-toggle="modal">Danh sách cách bài thực hành</button>
+                                                    <button type="button" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"> Xoá nhóm</i></button>
+                                                    
                                                     <hr>
                                                     <table class="table table-borderless">
                                                         <thead>
@@ -598,6 +600,7 @@
                                                                 <th scope="col">Đơn vị</th>
                                                                 <th scope="col">Ngày sinh</th>
                                                                 <th scope="col">Trạng thái</th>
+                                                                <th scope="col">Tuỳ chọn</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
@@ -607,6 +610,7 @@
                                                                 <td>HVKTQS</td>
                                                                 <td>18/12/1998</td>
                                                                 <td><span class="badge bg-success">Hoàn thành</span></td>
+                                                                <td><button type="button" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill me-1"></i></button></td>
                                                             </tr>
                                                             <tr>
                                                                 <th scope="row">1</th>
@@ -614,6 +618,7 @@
                                                                 <td>HVKTQS</td>
                                                                 <td>18/12/1998</td>
                                                                 <td><span class="badge bg-warning">Đang thực hiện</span></td>
+                                                                <td><button type="button" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill me-1"></i></button></td>
                                                             </tr>
                                                             <tr>
                                                                 <th scope="row">1</th>
@@ -621,6 +626,7 @@
                                                                 <td>HVKTQS</td>
                                                                 <td>18/12/1998</td>
                                                                 <td><span class="badge bg-warning">Đang thực hiện</span></td>
+                                                                <td><button type="button" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill me-1"></i></button></td>
                                                             </tr>
                                                             <tr>
                                                                 <th scope="row">1</th>
@@ -628,6 +634,7 @@
                                                                 <td>HVKTQS</td>
                                                                 <td>18/12/1998</td>
                                                                 <td><span class="badge bg-success">Hoàn thành</span></td>
+                                                                <td><button type="button" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill me-1"></i></button></td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
