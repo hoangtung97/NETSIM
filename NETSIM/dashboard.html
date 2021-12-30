@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <title>NETSIM - Danh sách khoá huấn luyện</title>
+        <title>NETSIM - Thống kê</title>
         <meta content="" name="description">
         <meta content="" name="keywords">
         <!-- Favicons -->
@@ -82,7 +82,7 @@
                                 <hr class="dropdown-divider">
                             </li>
                             <li>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
                                 <i class="bi bi-question-circle"></i>
                                 <span>Trợ giúp</span>
                                 </a>
@@ -91,7 +91,7 @@
                                 <hr class="dropdown-divider">
                             </li>
                             <li>
-                                <a class="dropdown-item d-flex align-items-center" href="pages-login.html">
+                                <a class="dropdown-item d-flex align-items-center" href="#">
                                 <i class="bi bi-box-arrow-right"></i>
                                 <span>Đăng xuất</span>
                                 </a>
@@ -109,8 +109,8 @@
         <aside id="sidebar" class="sidebar">
             <ul class="sidebar-nav" id="sidebar-nav">
                 <li class="nav-item">
-                    <a class="nav-link collapsed" href="dashboard.html">
-                    <i class="bi bi-person"></i>
+                    <a class="nav-link" href="dashboard.html">
+                    <i class="bi bi-grid"></i>
                     <span>Dashboard</span>
                     </a>
                 </li>
@@ -133,10 +133,10 @@
                 </li>
                 <!-- End Quản lý tài khoản -->
                 <li class="nav-item">
-                    <a class="nav-link" data-bs-target="#educate-nav" data-bs-toggle="collapse" href="#">
+                    <a class="nav-link collapsed" data-bs-target="#educate-nav" data-bs-toggle="collapse" href="#">
                     <i class="bi bi-book-half"></i><span>Quản lý đào tạo</span><i class="bi bi-chevron-down ms-auto"></i>
                     </a>
-                    <ul id="educate-nav" class="nav-content collapse show " data-bs-parent="#sidebar-nav">
+                    <ul id="educate-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                         <li>
                             <a href="#" data-bs-toggle="modal" data-bs-target="#createlophoc">
                             <i class="bi bi-circle"></i><span>Tạo khoá huấn luyện mới</span>
@@ -148,7 +148,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="course-list.html" class="active">
+                            <a href="course-list.html">
                             <i class="bi bi-circle"></i><span>Danh sách khoá huấn luyện</span>
                             </a>
                         </li>
@@ -243,228 +243,334 @@
         <!-- End Menu-->
         <main id="main" class="main">
             <div class="pagetitle">
-                <h1>Quản lý đào tạo</h1>
-                <nav>
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Quản lý đào tạo</a></li>
-                        <li class="breadcrumb-item active">Danh sách khoá huấn luyện</li>
-                    </ol>
-                </nav>
+                <h1>Thống kê</h1>
             </div>
             <!-- End - Tieu de -->
             <section class="section dashboard">
-                <!-- Danh sanh lop hoc -->
-                <!-- Quản lý tài khoản -->
-                <div class="card">
-                    <div class="card-body">
-                        <table class="table table-striped datatable">
-                            <thead>
-                                <tr class="table-success">
-                                    <th scope="col">STT</th>
-                                    <th scope="col">Tên khoá huấn luyện</th>
-                                    <th scope="col">Ngày bắt đầu</th>
-                                    <th scope="col">Ngày kết thúc</th>
-                                    <th scope="col">Trạng thái</th>
-                                    <th scope="col">Tuỳ chọn</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td><a href="class-detail.html">Khoá huấn luyện 1</a></td>
-                                    <td>20-11-2021</td>
-                                    <td>20-12-2021</td>
-                                    <td><span class="badge bg-warning text-dark">Đang huấn luyện</span></td>
-                                    <td>
-                                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#edit-course"><i class="bi bi-pencil-fill"></i></button>
-                                        <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#addHocvien"><i class="bi bi-person-plus"></i></button>
-                                        <button type="button" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></button>
-                                        
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Khoá huấn luyện 1</td>
-                                    <td>20-11-2021</td>
-                                    <td>20-12-2021</td>
-                                    <td><span class="badge bg-secondary">Chưa bắt đầu</span></td>
-                                    <td>
-                                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#edit-course"><i class="bi bi-pencil-fill"></i></button>
-                                        <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#addHocvien"><i class="bi bi-person-plus"></i></button>
-                                        <button type="button" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></button>
-                                        
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Khoá huấn luyện 1</td>
-                                    <td>20-11-2021</td>
-                                    <td>20-12-2021</td>
-                                    <td><span class="badge bg-danger">Quá hạn</span></td>
-                                    <td>
-                                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#edit-course"><i class="bi bi-pencil-fill"></i></button>
-                                        <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#addHocvien"><i class="bi bi-person-plus"></i></button>
-                                        <button type="button" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></button>
-                                        
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Khoá huấn luyện 1</td>
-                                    <td>20-11-2021</td>
-                                    <td>20-12-2021</td>
-                                    <td><span class="badge bg-success">Kết thúc</span></td>
-                                    <td>
-                                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#edit-course"><i class="bi bi-pencil-fill"></i></button>
-                                        <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#addHocvien"><i class="bi bi-person-plus"></i></button>
-                                        <button type="button" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></button>
-                                        
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Khoá huấn luyện 1</td>
-                                    <td>20-11-2021</td>
-                                    <td>20-12-2021</td>
-                                    <td><span class="badge bg-warning text-dark">Đang huấn luyện</span></td>
-                                    <td>
-                                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#edit-course"><i class="bi bi-pencil-fill"></i></button>
-                                        <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#addHocvien"><i class="bi bi-person-plus"></i></button>
-                                        <button type="button" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></button>
-                                        
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <!-- End quản lý tài khoản -->
-
-
-
-            </section>
-
-            <div class="modal fade" id="addHocvien" tabindex="-1">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Thêm học viên vào khoá huấn luyện</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-sm-8">
-                                    <input type="text" class="form-control" placeholder="Nhập tên học viên">
-                                </div>
-                                <div class="col-sm-4">
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Sắp xếp theo</option>
-                                        <option value="1">Đơn vị</option>
-                                        <option value="2">A → Z</option>
-                                        <option value="3">Z → A</option>
-                                    </select>
-                                </div>
-                                <br><br>
-                                <div class="col-sm-12">
-                                    <div class="card" style="padding-top: 5px;">
-                                        <ul class="list-group">
-                                            <li class="list-group-item">
-                                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                                Nguyễn Văn Nam
-                                            </li>
-                                            <li class="list-group-item">
-                                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                                Lê Sỹ Tùng
-                                            </li>
-                                            <li class="list-group-item">
-                                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                                Trần Thị B
-                                            </li>
-                                            <li class="list-group-item">
-                                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                                Trần Thị B
-                                            </li>
-                                            <li class="list-group-item">
-                                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                                Trần Thị B
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
-                            <button type="button" class="btn btn-primary">Thêm</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End Modal thêm học viên-->
-
-            <div class="modal fade" id="edit-course" tabindex="-1">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Cập nhật khoá huấn luyện</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <form>
-                                                <div class="row mb-3">
-                                                    <label for="inputText" class="col-sm-3 col-form-label">Tên khoá huấn luyện</label>
-                                                    <div class="col-sm-9">
-                                                        <input type="text" class="form-control">
-                                                    </div>
-                                                </div>
-                                                <div class="row mb-3">
-                                                    <label for="inputDate" class="col-sm-3 col-form-label">Ngày bắt đầu</label>
-                                                    <div class="col-sm-9">
-                                                        <input type="date" class="form-control">
-                                                    </div>
-                                                </div>
-                                                <div class="row mb-3">
-                                                    <label for="inputDate" class="col-sm-3 col-form-label">Ngày kết thúc</label>
-                                                    <div class="col-sm-9">
-                                                        <input type="date" class="form-control">
-                                                    </div>
-                                                </div>
-                                                <div class="row mb-3">
-                                                    <label for="inputPassword" class="col-sm-3 col-form-label">Mô tả khoá huấn luyện</label>
-                                                    <div class="col-sm-9">
-                                                        <textarea class="form-control" style="height: 100px"></textarea>
-                                                    </div>
-                                                </div>
-                                                <div class="row mb-3">
-                                                    <label for="inputPassword" class="col-sm-3 col-form-label">Trạng thái</label>
-                                                    <div class="col-sm-9">
-                                                        <select class="form-select" aria-label="Trạng thái">
-                                                            <option value="1">Chưa bắt đầu</option>
-                                                            <option value="2">Đang huấn luyện</option>
-                                                            <option value="3">Hoàn thành</option>
-                                                            <option value="3">Kết thúc</option>
-                                                          </select>
-                                                    </div>
-                                                </div>
-                                            </form>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <!-- Hov vien -->
+                            <div class="col-xxl-3 col-md-6">
+                                <div class="card info-card sales-card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tổng số học viên</h5>
+                                        <div class="d-flex align-items-center">
+                                            <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                                                <i class="bi bi-person"></i>
+                                            </div>
+                                            <div class="ps-3">
+                                                <h6>145</h6>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
-                            <button type="button" class="btn btn-primary">Cập nhật</button>
+                            <!-- End Hoc vien -->
+                            <!-- Lop -->
+                            <div class="col-xxl-3 col-md-6">
+                                <div class="card info-card revenue-card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tổng số lớp</h5>
+                                        <div class="d-flex align-items-center">
+                                            <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                                                <i class="bi bi-receipt-cutoff"></i>
+                                            </div>
+                                            <div class="ps-3">
+                                                <h6>20</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End  Lop -->
+                            <!-- Thiet bị -->
+                            <div class="col-xxl-3 col-xl-12">
+                                <div class="card info-card customers-card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tổng số thiết bị</span></h5>
+                                        <div class="d-flex align-items-center">
+                                            <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                                                <i class="bi bi-bounding-box-circles"></i>
+                                            </div>
+                                            <div class="ps-3">
+                                                <h6>1244</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Thiet bi -->
+                            <!-- Bai HL -->
+                            <div class="col-xxl-3 col-xl-12">
+                                <div class="card info-card customers-card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tổng số bài huấn luyện mẫu</span></h5>
+                                        <div class="d-flex align-items-center">
+                                            <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                                                <i class="bi bi-card-list"></i>
+                                            </div>
+                                            <div class="ps-3">
+                                                <h6>1244</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Bai HL -->
+                            <!-- Thong tin lop hoc -->
+                            <div class="row"></div>
+                            <div class="col-8">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <!-- Trang thai -->
+                                        <div class="card">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Thống kê theo trạng thái</h5>
+                                              <canvas id="class-status" style="max-height: 400px;"></canvas>
+                                              <script>
+                                                document.addEventListener("DOMContentLoaded", () => {
+                                                  new Chart(document.querySelector('#class-status'), {
+                                                    type: 'pie',
+                                                    data: {
+                                                      labels: [
+                                                        'Lớp đang học',
+                                                        'Lớp đã học xong',
+                                                        'Lớp quá hạn'
+                                                      ],
+                                                      datasets: [{
+                                                        label: 'My First Dataset',
+                                                        data: [300, 50, 100],
+                                                        backgroundColor: [
+                                                          'rgb(255, 99, 132)',
+                                                          'rgb(54, 162, 235)',
+                                                          'rgb(255, 205, 86)'
+                                                        ],
+                                                        hoverOffset: 4
+                                                      }]
+                                                    }
+                                                  });
+                                                });
+                                              </script>
+                                            </div>
+                                          </div>
+                                        <!-- End Trang thai -->
+                                    </div>
+                                    <div class="col-4">
+                                        <!-- The loai -->
+                                        <div class="card">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Thống kê theo thể loại</h5>
+                                              <canvas id="class-type" style="max-height: 400px;"></canvas>
+                                              <script>
+                                                document.addEventListener("DOMContentLoaded", () => {
+                                                  new Chart(document.querySelector('#class-type'), {
+                                                    type: 'pie',
+                                                    data: {
+                                                      labels: [
+                                                        'Lớp cơ bản',
+                                                        'Lớp nâng cao'
+                                                      ],
+                                                      datasets: [{
+                                                        label: 'My First Dataset',
+                                                        data: [300, 50],
+                                                        backgroundColor: [
+                                                          'rgb(255, 99, 132)',
+                                                          'rgb(54, 162, 235)',
+                                                          'rgb(255, 205, 86)'
+                                                        ],
+                                                        hoverOffset: 4
+                                                      }]
+                                                    }
+                                                  });
+                                                });
+                                              </script>
+                                            </div>
+                                          </div>
+                                        <!-- End the loai -->
+                                    </div>
+                                    <div class="col-4">
+                                        <!-- Thong tin bai huan luyen mau -->
+                                        <div class="card">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Thông tin bài huấn luyện mẫu</h5>
+                                              <canvas id="examples" style="max-height: 400px;"></canvas>
+                                              <script>
+                                                document.addEventListener("DOMContentLoaded", () => {
+                                                  new Chart(document.querySelector('#examples'), {
+                                                    type: 'pie',
+                                                    data: {
+                                                      labels: [
+                                                        'Loại 1',
+                                                        'Loại 2',
+                                                        'Loại 3',
+                                                        'Loại 4'
+                                                      ],
+                                                      datasets: [{
+                                                        label: 'My First Dataset',
+                                                        data: [40, 50, 20, 39],
+                                                        backgroundColor: [
+                                                          'rgb(255, 99, 132)',
+                                                          'rgb(54, 162, 235)',
+                                                          'rgb(255, 205, 86)',
+                                                          'rgb(75, 192, 192)'
+                                                        ],
+                                                        hoverOffset: 4
+                                                      }]
+                                                    }
+                                                  });
+                                                });
+                                              </script>
+                                            </div>
+                                          </div>
+                                        <!-- End  Thong tin bai huan luyen mau -->
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Thông tin học viên</h5>
+                                
+                                              <!-- Thong tin lop -->
+                                              <canvas id="student-info" style="max-height: 400px;"></canvas>
+                                              <script>
+                                                document.addEventListener("DOMContentLoaded", () => {
+                                                  new Chart(document.querySelector('#student-info'), {
+                                                    type: 'bar',
+                                                    data: {
+                                                      labels: ['Lớp 1', 'Lớp 2', 'Lớp 3', 'Lớp 4', 'Lớp 5'],
+                                                      datasets: [{
+                                                          label: 'Thông tin lớp',
+                                                          data: [30, 37, 18, 48, 74],
+                                                          backgroundColor: 'rgb(255, 99, 132)',
+                                                        },
+                                                      ]
+                                                    },
+                                                    options: {
+                                                      responsive: true,
+                                                      scales: {
+                                                        x: {
+                                                          stacked: true,
+                                                        },
+                                                        y: {
+                                                          stacked: true
+                                                        }
+                                                      }
+                                                    }
+                                                  });
+                                                });
+                                              </script>
+                                              <!-- End Thong tin lop -->
+                                
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Thông tin thiết bị</h5>
+
+                                          <!-- Thong tin thiet bi -->
+                                          <canvas id="device" style="max-height: 400px;"></canvas>
+                                          <script>
+                                            document.addEventListener("DOMContentLoaded", () => {
+                                              new Chart(document.querySelector('#device'), {
+                                                type: 'bar',
+                                                data: {
+                                                  labels: ['Router', 'Switch', 'FireWall', 'Khác...'],
+                                                  datasets: [{
+                                                      label: 'Thiết bị',
+                                                      data: [30, 37, 18, 48, 74],
+                                                      backgroundColor: 'rgb(255, 99, 132)',
+                                                    },
+                                                  ]
+                                                },
+                                                options: {
+                                                  responsive: true,
+                                                  scales: {
+                                                    x: {
+                                                      stacked: true,
+                                                    },
+                                                    y: {
+                                                      stacked: true
+                                                    }
+                                                  }
+                                                }
+                                              });
+                                            });
+                                          </script>
+                                          <!-- End Thong tin thiet bi -->
+                                           
+                                          <br><hr>
+                                          <canvas id="device2" style="max-height: 400px;"></canvas>
+                                            <script>
+                                                document.addEventListener("DOMContentLoaded", () => {
+                                                new Chart(document.querySelector('#device2'), {
+                                                    type: 'polarArea',
+                                                    data: {
+                                                    labels: [
+                                                        'Cisco Juniper',
+                                                        'Loại 1',
+                                                        'Loại 2',
+                                                        'Loại 3',
+                                                        'Loại 4'
+                                                    ],
+                                                    datasets: [{
+                                                        label: 'My First Dataset',
+                                                        data: [11, 16, 7, 3, 14],
+                                                        backgroundColor: [
+                                                        'rgb(255, 99, 132)',
+                                                        'rgb(75, 192, 192)',
+                                                        'rgb(255, 205, 86)',
+                                                        'rgb(201, 203, 207)',
+                                                        'rgb(54, 162, 235)'
+                                                        ]
+                                                    }]
+                                                    }
+                                                });
+                                                });
+                                            </script> 
+                                            <br><hr>
+                                            <h5 class="card-title">Trạng thái POD</h5>
+                                            <canvas id="pod" style="max-height: 400px;"></canvas>
+                                              <script>
+                                                document.addEventListener("DOMContentLoaded", () => {
+                                                  new Chart(document.querySelector('#pod'), {
+                                                    type: 'pie',
+                                                    data: {
+                                                      labels: [
+                                                        'Đang sử dụng',
+                                                        'Chưa sử dụng',
+                                                      ],
+                                                      datasets: [{
+                                                        label: 'My First Dataset',
+                                                        data: [300, 50,],
+                                                        backgroundColor: [
+                                                          'rgb(255, 99, 132)',
+                                                          'rgb(54, 162, 235)',
+                                                          'rgb(255, 205, 86)'
+                                                        ],
+                                                        hoverOffset: 4
+                                                      }]
+                                                    }
+                                                  });
+                                                });
+                                              </script>
+
+
+                            
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- End Modal edit khoa huan luyen-->
-
+                <!-- End Right side columns -->
+                </div>
+            </section>
             <div class="modal fade" id="createlophoc" tabindex="-1">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
