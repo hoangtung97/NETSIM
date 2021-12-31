@@ -326,120 +326,192 @@
                                         <!-- Trang thai -->
                                         <div class="card">
                                             <div class="card-body">
-                                              <h5 class="card-title">Thống kê theo trạng thái</h5>
-                                              <canvas id="class-status" style="max-height: 400px;"></canvas>
-                                              <script>
-                                                document.addEventListener("DOMContentLoaded", () => {
-                                                  new Chart(document.querySelector('#class-status'), {
-                                                    type: 'pie',
-                                                    data: {
-                                                      labels: [
-                                                        'Lớp đang học',
-                                                        'Lớp đã học xong',
-                                                        'Lớp quá hạn'
-                                                      ],
-                                                      datasets: [{
-                                                        label: 'My First Dataset',
-                                                        data: [300, 50, 100],
-                                                        backgroundColor: [
-                                                          'rgb(255, 99, 132)',
-                                                          'rgb(54, 162, 235)',
-                                                          'rgb(255, 205, 86)'
-                                                        ],
-                                                        hoverOffset: 4
-                                                      }]
-                                                    }
-                                                  });
-                                                });
-                                              </script>
+                                                <h5 class="card-title">Thống kê theo trạng thái</h5>
+                                                <canvas id="class-status" style="max-height: 400px;"></canvas>
+                                                <script>
+                                                    document.addEventListener("DOMContentLoaded", () => {
+                                                      new Chart(document.querySelector('#class-status'), {
+                                                        type: 'pie',
+                                                        data: {
+                                                          labels: [
+                                                            'Lớp đang học',
+                                                            'Lớp đã học xong',
+                                                            'Lớp quá hạn'
+                                                          ],
+                                                          datasets: [{
+                                                            label: 'My First Dataset',
+                                                            data: [300, 50, 100],
+                                                            backgroundColor: [
+                                                              'rgb(255, 99, 132)',
+                                                              'rgb(54, 162, 235)',
+                                                              'rgb(255, 205, 86)'
+                                                            ],
+                                                            hoverOffset: 4
+                                                          }]
+                                                        }
+                                                      });
+                                                    });
+                                                </script>
                                             </div>
-                                          </div>
+                                        </div>
                                         <!-- End Trang thai -->
                                     </div>
                                     <div class="col-4">
                                         <!-- The loai -->
                                         <div class="card">
                                             <div class="card-body">
-                                              <h5 class="card-title">Thống kê theo thể loại</h5>
-                                              <canvas id="class-type" style="max-height: 400px;"></canvas>
-                                              <script>
-                                                document.addEventListener("DOMContentLoaded", () => {
-                                                  new Chart(document.querySelector('#class-type'), {
-                                                    type: 'pie',
-                                                    data: {
-                                                      labels: [
-                                                        'Lớp cơ bản',
-                                                        'Lớp nâng cao'
-                                                      ],
-                                                      datasets: [{
-                                                        label: 'My First Dataset',
-                                                        data: [300, 50],
-                                                        backgroundColor: [
-                                                          'rgb(255, 99, 132)',
-                                                          'rgb(54, 162, 235)',
-                                                          'rgb(255, 205, 86)'
-                                                        ],
-                                                        hoverOffset: 4
-                                                      }]
-                                                    }
-                                                  });
-                                                });
-                                              </script>
+                                                <h5 class="card-title">Thống kê theo thể loại</h5>
+                                                <canvas id="class-type" style="max-height: 400px;"></canvas>
+                                                <script>
+                                                    document.addEventListener("DOMContentLoaded", () => {
+                                                      new Chart(document.querySelector('#class-type'), {
+                                                        type: 'pie',
+                                                        data: {
+                                                          labels: [
+                                                            'Lớp cơ bản',
+                                                            'Lớp nâng cao'
+                                                          ],
+                                                          datasets: [{
+                                                            label: 'My First Dataset',
+                                                            data: [300, 50],
+                                                            backgroundColor: [
+                                                              'rgb(255, 99, 132)',
+                                                              'rgb(54, 162, 235)',
+                                                              'rgb(255, 205, 86)'
+                                                            ],
+                                                            hoverOffset: 4
+                                                          }]
+                                                        }
+                                                      });
+                                                    });
+                                                </script>
                                             </div>
-                                          </div>
+                                        </div>
                                         <!-- End the loai -->
                                     </div>
                                     <div class="col-4">
                                         <!-- Thong tin bai huan luyen mau -->
                                         <div class="card">
                                             <div class="card-body">
-                                              <h5 class="card-title">Thông tin bài huấn luyện mẫu</h5>
-                                              <canvas id="examples" style="max-height: 400px;"></canvas>
-                                              <script>
-                                                document.addEventListener("DOMContentLoaded", () => {
-                                                  new Chart(document.querySelector('#examples'), {
-                                                    type: 'pie',
-                                                    data: {
-                                                      labels: [
-                                                        'Loại 1',
-                                                        'Loại 2',
-                                                        'Loại 3',
-                                                        'Loại 4'
-                                                      ],
-                                                      datasets: [{
-                                                        label: 'My First Dataset',
-                                                        data: [40, 50, 20, 39],
-                                                        backgroundColor: [
-                                                          'rgb(255, 99, 132)',
-                                                          'rgb(54, 162, 235)',
-                                                          'rgb(255, 205, 86)',
-                                                          'rgb(75, 192, 192)'
-                                                        ],
-                                                        hoverOffset: 4
-                                                      }]
-                                                    }
-                                                  });
-                                                });
-                                              </script>
+                                                <h5 class="card-title">Thông tin bài huấn luyện mẫu</h5>
+                                                <canvas id="examples" style="max-height: 400px;"></canvas>
+                                                <script>
+                                                    document.addEventListener("DOMContentLoaded", () => {
+                                                      new Chart(document.querySelector('#examples'), {
+                                                        type: 'pie',
+                                                        data: {
+                                                          labels: [
+                                                            'Loại 1',
+                                                            'Loại 2',
+                                                            'Loại 3',
+                                                            'Loại 4'
+                                                          ],
+                                                          datasets: [{
+                                                            label: 'My First Dataset',
+                                                            data: [40, 50, 20, 39],
+                                                            backgroundColor: [
+                                                              'rgb(255, 99, 132)',
+                                                              'rgb(54, 162, 235)',
+                                                              'rgb(255, 205, 86)',
+                                                              'rgb(75, 192, 192)'
+                                                            ],
+                                                            hoverOffset: 4
+                                                          }]
+                                                        }
+                                                      });
+                                                    });
+                                                </script>
                                             </div>
-                                          </div>
+                                        </div>
                                         <!-- End  Thong tin bai huan luyen mau -->
                                     </div>
                                     <div class="col-12">
                                         <div class="card">
                                             <div class="card-body">
-                                              <h5 class="card-title">Thông tin học viên</h5>
-                                
-                                              <!-- Thong tin lop -->
-                                              <canvas id="student-info" style="max-height: 400px;"></canvas>
-                                              <script>
+                                                <h5 class="card-title">Thông tin học viên</h5>
+                                                <!-- Thong tin lop -->
+                                                <canvas id="student-info" style="max-height: 400px;"></canvas>
+                                                <script>
+                                                    document.addEventListener("DOMContentLoaded", () => {
+                                                      new Chart(document.querySelector('#student-info'), {
+                                                        type: 'bar',
+                                                        data: {
+                                                          labels: ['Lớp 1', 'Lớp 2', 'Lớp 3', 'Lớp 4', 'Lớp 5'],
+                                                          datasets: [{
+                                                              label: 'Thông tin lớp',
+                                                              data: [30, 37, 18, 48, 74],
+                                                              backgroundColor: 'rgb(255, 99, 132)',
+                                                            },
+                                                          ]
+                                                        },
+                                                        options: {
+                                                          responsive: true,
+                                                          scales: {
+                                                            x: {
+                                                              stacked: true,
+                                                            },
+                                                            y: {
+                                                              stacked: true
+                                                            }
+                                                          }
+                                                        }
+                                                      });
+                                                    });
+                                                </script>
+                                                <!-- End Thong tin lop -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Trạng thái hệ thống</h5>
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <p><strong>CPU used: 10%</strong></p>
+                                                        <div class="progress">
+                                                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p><strong>Memory used: 25%</strong></p>
+                                                        <div class="progress">
+                                                            <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p><strong>Swap used:75%</strong></p>
+                                                        <div class="progress mt-3">
+                                                            <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p><strong>Disk used: 90%</strong></p>
+                                                        <div class="progress mt-3">
+                                                            <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Thông tin thiết bị</h5>
+                                            <!-- Thong tin thiet bi -->
+                                            <canvas id="device" style="max-height: 400px;"></canvas>
+                                            <script>
                                                 document.addEventListener("DOMContentLoaded", () => {
-                                                  new Chart(document.querySelector('#student-info'), {
+                                                  new Chart(document.querySelector('#device'), {
                                                     type: 'bar',
                                                     data: {
-                                                      labels: ['Lớp 1', 'Lớp 2', 'Lớp 3', 'Lớp 4', 'Lớp 5'],
+                                                      labels: ['Router', 'Switch', 'FireWall', 'Khác...'],
                                                       datasets: [{
-                                                          label: 'Thông tin lớp',
+                                                          label: 'Thiết bị',
                                                           data: [30, 37, 18, 48, 74],
                                                           backgroundColor: 'rgb(255, 99, 132)',
                                                         },
@@ -458,53 +530,11 @@
                                                     }
                                                   });
                                                 });
-                                              </script>
-                                              <!-- End Thong tin lop -->
-                                
-                                            </div>
-                                          </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="col-12">
-                                    <div class="card">
-                                        <div class="card-body">
-                                          <h5 class="card-title">Thông tin thiết bị</h5>
-
-                                          <!-- Thong tin thiet bi -->
-                                          <canvas id="device" style="max-height: 400px;"></canvas>
-                                          <script>
-                                            document.addEventListener("DOMContentLoaded", () => {
-                                              new Chart(document.querySelector('#device'), {
-                                                type: 'bar',
-                                                data: {
-                                                  labels: ['Router', 'Switch', 'FireWall', 'Khác...'],
-                                                  datasets: [{
-                                                      label: 'Thiết bị',
-                                                      data: [30, 37, 18, 48, 74],
-                                                      backgroundColor: 'rgb(255, 99, 132)',
-                                                    },
-                                                  ]
-                                                },
-                                                options: {
-                                                  responsive: true,
-                                                  scales: {
-                                                    x: {
-                                                      stacked: true,
-                                                    },
-                                                    y: {
-                                                      stacked: true
-                                                    }
-                                                  }
-                                                }
-                                              });
-                                            });
-                                          </script>
-                                          <!-- End Thong tin thiet bi -->
-                                           
-                                          <br><hr>
-                                          <canvas id="device2" style="max-height: 400px;"></canvas>
+                                            </script>
+                                            <!-- End Thong tin thiet bi -->
+                                            <br>
+                                            <hr>
+                                            <canvas id="device2" style="max-height: 400px;"></canvas>
                                             <script>
                                                 document.addEventListener("DOMContentLoaded", () => {
                                                 new Chart(document.querySelector('#device2'), {
@@ -532,10 +562,11 @@
                                                 });
                                                 });
                                             </script> 
-                                            <br><hr>
+                                            <br>
+                                            <hr>
                                             <h5 class="card-title">Trạng thái POD</h5>
                                             <canvas id="pod" style="max-height: 400px;"></canvas>
-                                              <script>
+                                            <script>
                                                 document.addEventListener("DOMContentLoaded", () => {
                                                   new Chart(document.querySelector('#pod'), {
                                                     type: 'pie',
@@ -557,12 +588,9 @@
                                                     }
                                                   });
                                                 });
-                                              </script>
-
-
-                            
+                                            </script>
                                         </div>
-                                      </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
