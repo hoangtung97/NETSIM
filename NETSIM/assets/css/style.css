@@ -1139,3 +1139,113 @@ float: right;
   font-weight: 700;
   background-color: #c5d7f2;
 }
+
+
+.box
+{
+  background:#fff;
+  width:100%;
+  height:300px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+  flex-direction:column;
+  transition: transform .2s;
+}
+/* .box:hover
+{
+ transform:scale(1.2);
+} */
+.box .percent
+{
+  width:150px;
+  height:150px;
+  position:relative;
+}
+.box .percent svg
+{
+  width:150px;
+  height:150px;
+  position:relative;
+}
+.box .percent svg  circle
+{
+  width:150px;
+  height:150px;
+  fill:none;
+  stroke-width:10;
+  stroke:#000;
+  transform:translate(5px,5px);
+  stroke-dasharray:440;
+  stroke-dashoffset:440;
+  stroke-linecap:round;
+}
+.box .percent .percent-cpu svg  circle:nth-child(1)
+{
+  stroke-dashoffset:0;
+  stroke:#f3f3f3;
+}
+.box .percent .percent-cpu svg circle:nth-child(2)
+{
+  stroke-dashoffset:calc(440 - (440 * 10) / 100);
+  stroke:#4154f1;
+}
+.box .percent .percent-memory svg  circle:nth-child(1)
+{
+  stroke-dashoffset:0;
+  stroke:#f3f3f3;
+}
+.box .percent .percent-memory svg circle:nth-child(2)
+{
+  stroke-dashoffset:calc(440 - (440 * 20) / 100);
+  stroke:#4154f1;
+}
+.box .percent .percent-swap svg  circle:nth-child(1)
+{
+  stroke-dashoffset:0;
+  stroke:#f3f3f3;
+}
+.box .percent .percent-swap svg circle:nth-child(2)
+{
+  stroke-dashoffset:calc(440 - (440 * 50) / 100);
+  stroke:#4154f1;
+}
+.box .percent .percent-disk svg  circle:nth-child(1)
+{
+  stroke-dashoffset:0;
+  stroke:#f3f3f3;
+}
+.box .percent .percent-disk svg circle:nth-child(2)
+{
+  stroke-dashoffset:calc(440 - (440 * 90) / 100);
+  stroke:#4154f1;
+}
+.box .percent .num
+{
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:absolute;
+  color:#012970;
+}
+.box .percent .num h2
+{
+  font-size:48px;
+}
+.box .percent .num h2 span
+{
+  font-size:24px;
+}
+.box .text
+{
+  padding: 10px 0 0;
+  font-size: 20px;
+  color:#4154f1;
+  font-weight:700;
+  letter-spacing:1px;
+}

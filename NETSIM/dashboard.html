@@ -326,7 +326,7 @@
                                         <!-- Trang thai -->
                                         <div class="card">
                                             <div class="card-body">
-                                                <h5 class="card-title">Thống kê theo trạng thái</h5>
+                                                <h5 class="card-title">Trạng thái lớp học</h5>
                                                 <canvas id="class-status" style="max-height: 400px;"></canvas>
                                                 <script>
                                                     document.addEventListener("DOMContentLoaded", () => {
@@ -339,7 +339,6 @@
                                                             'Lớp quá hạn'
                                                           ],
                                                           datasets: [{
-                                                            label: 'My First Dataset',
                                                             data: [300, 50, 100],
                                                             backgroundColor: [
                                                               'rgb(0, 227, 150)',
@@ -360,7 +359,7 @@
                                         <!-- The loai -->
                                         <div class="card">
                                             <div class="card-body">
-                                                <h5 class="card-title">Thống kê theo thể loại</h5>
+                                                <h5 class="card-title">Thể loại lớp học</h5>
                                                 <canvas id="class-type" style="max-height: 400px;"></canvas>
                                                 <script>
                                                     document.addEventListener("DOMContentLoaded", () => {
@@ -425,51 +424,15 @@
                                         </div>
                                         <!-- End  Thong tin bai huan luyen mau -->
                                     </div>
-                                    <div class="col-12">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Thống kê học viên theo cơ quan đơn vị</h5>
-                                                <!-- Thong tin lop -->
-                                                <canvas id="student-info" style="max-height: 400px;"></canvas>
-                                                <script>
-                                                    document.addEventListener("DOMContentLoaded", () => {
-                                                      new Chart(document.querySelector('#student-info'), {
-                                                        type: 'bar',
-                                                        data: {
-                                                          labels: ['Đơn vị 1', 'Đơn vị 2', 'Đơn vị 3', 'Đơn vị 4', 'Đơn vị 5'],
-                                                          datasets: [{
-                                                              label: 'Thông tin lớp',
-                                                              data: [30, 37, 18, 48, 74],
-                                                              backgroundColor: 'rgb(38, 160, 252)',
-                                                            },
-                                                          ]
-                                                        },
-                                                        options: {
-                                                          responsive: true,
-                                                          scales: {
-                                                            x: {
-                                                              stacked: true,
-                                                            },
-                                                            y: {
-                                                              stacked: true
-                                                            }
-                                                          }
-                                                        }
-                                                      });
-                                                    });
-                                                </script>
-                                                <!-- End Thong tin lop -->
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
                                     <div class="col-lg-12">
                                         <div class="card">
                                             <div class="card-body">
                                               <h5 class="card-title">Các khoá huấn luyện đang diễn ra</h5>
                                               <!-- Active Table -->
-                                              <table class="table table-borderless">
+                                              <table class="table table-striped">
                                                 <thead>
-                                                  <tr>
+                                                  <tr class="table-info">
                                                     <th scope="col">STT</th>
                                                     <th scope="col">Tên khoá huấn luyện</th>
                                                     <th scope="col">Ngày bắt đầu</th>
@@ -524,30 +487,113 @@
                                     <div class="col-12">
                                         <div class="card">
                                             <div class="card-body">
+                                                <h5 class="card-title">Thống kê học viên theo cơ quan đơn vị</h5>
+                                                <!-- Thong tin lop -->
+                                                <canvas id="student-info" style="max-height: 400px;"></canvas>
+                                                <script>
+                                                    document.addEventListener("DOMContentLoaded", () => {
+                                                      new Chart(document.querySelector('#student-info'), {
+                                                        type: 'bar',
+                                                        data: {
+                                                          labels: ['Đơn vị 1', 'Đơn vị 2', 'Đơn vị 3', 'Đơn vị 4', 'Đơn vị 5'],
+                                                          datasets: [{
+                                                              label: 'Thông tin lớp',
+                                                              data: [30, 37, 18, 48, 74],
+                                                              backgroundColor:['rgb(255, 1, 1)',
+                                                              'rgb(156, 26, 224)',
+                                                              'rgb(251, 255, 1)',
+                                                              'rgb(0, 175, 152)',
+                                                              'rgb(30, 185, 195)']
+                                                            },
+                                                          ]
+                                                        },
+                                                        options: {
+                                                          responsive: true,
+                                                          scales: {
+                                                            x: {
+                                                              stacked: true,
+                                                            },
+                                                            y: {
+                                                              stacked: true
+                                                            }
+                                                          }
+                                                        }
+                                                      });
+                                                    });
+                                                </script>
+                                                <!-- End Thong tin lop -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <div class="card-body">
                                                 <h5 class="card-title">Trạng thái hệ thống</h5>
                                                 <div class="row">
+                                                    <div class="col-3">  
+                                                    <div class="box">
+                                                        <div class="percent">
+                                                            <div class="percent-cpu">
+                                                                <svg >
+                                                                    <circle cx="70" cy="70" r="70"></circle>
+                                                                    <circle cx="70" cy="70" r="70"></circle>
+                                                                </svg>
+                                                            </div>
+                                                        
+                                                        <div class="num">
+                                                            <h2>10<span>%</span></h2>
+                                                        </div>
+                                                        </div>
+                                                        <h2 class="text">CPU used: 10%</h2>
+                                                    </div>
+                                                    </div>
                                                     <div class="col-3">
-                                                        <p><strong>CPU used: 10%</strong></p>
-                                                        <div class="progress">
-                                                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        <div class="box">
+                                                            <div class="percent">
+                                                                <div class="percent-memory">
+                                                                    <svg >
+                                                                        <circle cx="70" cy="70" r="70"></circle>
+                                                                        <circle cx="70" cy="70" r="70"></circle>
+                                                                    </svg>
+                                                                </div>
+                                                            
+                                                            <div class="num">
+                                                                <h2>20<span>%</span></h2>
+                                                            </div>
+                                                            </div>
+                                                            <h2 class="text">Memory used: 20%</h2>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
-                                                        <p><strong>Memory used: 25%</strong></p>
-                                                        <div class="progress">
-                                                            <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        <div class="box">
+                                                            <div class="percent">
+                                                                <div class="percent-swap">
+                                                                    <svg>
+                                                                        <circle cx="70" cy="70" r="70"></circle>
+                                                                        <circle cx="70" cy="70" r="70"></circle>
+                                                                    </svg>
+                                                                </div>
+                                                            <div class="num">
+                                                                <h2>50<span>%</span></h2>
+                                                            </div>
+                                                            </div>
+                                                            <h2 class="text">Swap used: 50%</h2>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
-                                                        <p><strong>Swap used:75%</strong></p>
-                                                        <div class="progress mt-3">
-                                                            <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-3">
-                                                        <p><strong>Disk used: 90%</strong></p>
-                                                        <div class="progress mt-3">
-                                                            <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        <div class="box">
+                                                            <div class="percent">
+                                                                <div class="percent-disk">
+                                                                    <svg>
+                                                                        <circle cx="70" cy="70" r="70"></circle>
+                                                                        <circle cx="70" cy="70" r="70"></circle>
+                                                                    </svg>
+                                                                </div>
+                                                            <div class="num">
+                                                                <h2>90<span>%</span></h2>
+                                                            </div>
+                                                            </div>
+                                                            <h2 class="text">Disk used: 90%</h2>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -572,7 +618,12 @@
                                                       datasets: [{
                                                           label: 'Thiết bị',
                                                           data: [30, 37, 18, 48, 74],
-                                                          backgroundColor: 'rgb(0, 227, 150)',
+                                                          backgroundColor: [
+                                                            'rgb(255, 99, 132)',
+                                                            'rgb(255, 159, 64)',
+                                                            'rgb(255, 205, 86)',
+                                                            'rgb(75, 192, 192)',
+                                                            ],
                                                         },
                                                       ]
                                                     },
@@ -593,36 +644,44 @@
                                             <!-- End Thong tin thiet bi -->
                                             <br>
                                             <hr>
-                                            <canvas id="device2" style="max-height: 400px;"></canvas>
-                                            <script>
-                                                document.addEventListener("DOMContentLoaded", () => {
-                                                new Chart(document.querySelector('#device2'), {
-                                                    type: 'polarArea',
-                                                    data: {
-                                                    labels: [
-                                                        'Cisco Juniper',
-                                                        'Loại 1',
-                                                        'Loại 2',
-                                                        'Loại 3',
-                                                        'Loại 4'
-                                                    ],
-                                                    datasets: [{
-                                                        label: 'My First Dataset',
-                                                        data: [11, 16, 7, 3, 14],
-                                                        backgroundColor: [
-                                                        'rgb(0, 227, 150)',
-                                                        'rgb(75, 192, 192)',
-                                                        'rgb(255, 205, 86)',
-                                                        'rgb(201, 203, 207)',
-                                                        'rgb(54, 162, 235)'
-                                                        ]
-                                                    }]
-                                                    }
-                                                });
-                                                });
-                                            </script> 
+                                            <div class="row justify-content-md-center">
+                                                <div class="col-9">
+                                                    <canvas id="device2" style="max-height: 400px;"></canvas>
+                                                    <script>
+                                                        document.addEventListener("DOMContentLoaded", () => {
+                                                        new Chart(document.querySelector('#device2'), {
+                                                            type: 'polarArea',
+                                                            data: {
+                                                            labels: [
+                                                                'Cisco Juniper',
+                                                                'Loại 1',
+                                                                'Loại 2',
+                                                                'Loại 3',
+                                                                'Loại 4'
+                                                            ],
+                                                            datasets: [{
+                                                                label: 'My First Dataset',
+                                                                data: [11, 16, 7, 3, 14],
+                                                                backgroundColor: [
+                                                                'rgb(0, 227, 150)',
+                                                                'rgb(75, 192, 192)',
+                                                                'rgb(255, 205, 86)',
+                                                                'rgb(201, 203, 207)',
+                                                                'rgb(54, 162, 235)'
+                                                                ]
+                                                            }]
+                                                            }
+                                                        });
+                                                        });
+                                                    </script>
+                                                </div>
+                                            </div>
+                                            
+                                             
                                             <br>
                                             <hr>
+                                            <div class="row justify-content-md-center">
+                                                <div class="col-9">
                                             <h5 class="card-title">Trạng thái POD</h5>
                                             <canvas id="pod" style="max-height: 400px;"></canvas>
                                             <script>
@@ -647,6 +706,8 @@
                                                   });
                                                 });
                                             </script>
+                                            </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
