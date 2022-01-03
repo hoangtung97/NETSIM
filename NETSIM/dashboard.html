@@ -322,169 +322,82 @@
                             <div class="row"></div>
                             <div class="col-lg-8">
                                 <div class="row">
-                                    <div class="col-lg-4 col-md-6">
+                                    <div class="col-lg-6 col-md-6">
                                         <!-- Trang thai -->
                                         <div class="card">
                                             <div class="card-body">
                                                 <h5 class="card-title">Trạng thái lớp học</h5>
-                                                <canvas id="class-status" style="max-height: 400px;"></canvas>
+                                                <div id="class-status"></div>
                                                 <script>
                                                     document.addEventListener("DOMContentLoaded", () => {
-                                                      new Chart(document.querySelector('#class-status'), {
-                                                        type: 'pie',
-                                                        data: {
-                                                          labels: [
-                                                            'Lớp đang học',
-                                                            'Lớp đã học xong',
-                                                            'Lớp quá hạn'
-                                                          ],
-                                                          datasets: [{
-                                                            data: [300, 50, 100],
-                                                            backgroundColor: [
-                                                              'rgb(0, 227, 150)',
-                                                              'rgb(54, 162, 235)',
-                                                              'rgb(255, 205, 86)'
-                                                            ],
-                                                            hoverOffset: 4
-                                                          }]
-                                                        }
-                                                      });
+                                                      new ApexCharts(document.querySelector("#class-status"), {
+                                                        series: [44, 55, 13],
+                                                        chart: {
+                                                          height: 350,
+                                                          type: 'pie',
+                                                          toolbar: {
+                                                            show: true
+                                                          }
+                                                        },
+                                                        labels: ['Lớp đang học', 'Lớp học xong', 'Lớp quá hạn']
+                                                      }).render();
                                                     });
-                                                </script>
+                                                </script> 
                                             </div>
                                         </div>
                                         <!-- End Trang thai -->
                                     </div>
-                                    <div class="col-lg-4 col-md-6">
+                                    <div class="col-lg-6 col-md-6">
                                         <!-- The loai -->
                                         <div class="card">
                                             <div class="card-body">
-                                                <h5 class="card-title">Thể loại lớp học</h5>
-                                                <canvas id="class-type" style="max-height: 400px;"></canvas>
+                                                <h5 class="card-title">Trạng thái lớp học</h5>
+                                                <div id="class-type"></div>
                                                 <script>
                                                     document.addEventListener("DOMContentLoaded", () => {
-                                                      new Chart(document.querySelector('#class-type'), {
-                                                        type: 'pie',
-                                                        data: {
-                                                          labels: [
-                                                            'Lớp cơ bản',
-                                                            'Lớp nâng cao'
-                                                          ],
-                                                          datasets: [{
-                                                            label: 'My First Dataset',
-                                                            data: [300, 50],
-                                                            backgroundColor: [
-                                                              'rgb(0, 227, 150)',
-                                                              'rgb(54, 162, 235)',
-                                                              'rgb(255, 205, 86)'
-                                                            ],
-                                                            hoverOffset: 4
-                                                          }]
-                                                        }
-                                                      });
+                                                      new ApexCharts(document.querySelector("#class-type"), {
+                                                        series: [44, 55],
+                                                        chart: {
+                                                          height: 350,
+                                                          type: 'pie',
+                                                          toolbar: {
+                                                            show: true
+                                                          }
+                                                        },
+                                                        labels: ['Lớp cơ bản', 'Lớp nâng cao']
+                                                      }).render();
                                                     });
-                                                </script>
+                                                </script> 
                                             </div>
                                         </div>
                                         <!-- End the loai -->
                                     </div>
-                                    <div class="col-lg-4 col-md-6">
+                                    <div class="col-lg-5">
                                         <!-- Thong tin bai huan luyen mau -->
                                         <div class="card">
                                             <div class="card-body">
                                                 <h5 class="card-title">Thông tin bài huấn luyện mẫu</h5>
-                                                <canvas id="examples" style="max-height: 400px;"></canvas>
+                                                <div id="examples"></div>
                                                 <script>
                                                     document.addEventListener("DOMContentLoaded", () => {
-                                                      new Chart(document.querySelector('#examples'), {
-                                                        type: 'pie',
-                                                        data: {
-                                                          labels: [
-                                                            'Loại 1',
-                                                            'Loại 2',
-                                                            'Loại 3',
-                                                            'Loại 4'
-                                                          ],
-                                                          datasets: [{
-                                                            label: 'My First Dataset',
-                                                            data: [40, 50, 20, 39],
-                                                            backgroundColor: [
-                                                              'rgb(0, 227, 150)',
-                                                              'rgb(54, 162, 235)',
-                                                              'rgb(255, 205, 86)',
-                                                              'rgb(75, 192, 192)'
-                                                            ],
-                                                            hoverOffset: 4
-                                                          }]
-                                                        }
-                                                      });
+                                                      new ApexCharts(document.querySelector("#examples"), {
+                                                        series: [44, 55,67,90],
+                                                        chart: {
+                                                          height: 350,
+                                                          type: 'pie',
+                                                          toolbar: {
+                                                            show: true
+                                                          }
+                                                        },
+                                                        labels: ['Loại 1', 'Loại 2', 'Loại 3', 'Loại 4']
+                                                      }).render();
                                                     });
-                                                </script>
+                                                </script> 
                                             </div>
                                         </div>
                                         <!-- End  Thong tin bai huan luyen mau -->
                                     </div>
-                                    
-                                    <div class="col-lg-12">
-                                        <div class="card">
-                                            <div class="card-body">
-                                              <h5 class="card-title">Các khoá huấn luyện đang diễn ra</h5>
-                                              <!-- Active Table -->
-                                              <table class="table table-striped">
-                                                <thead>
-                                                  <tr class="table-info">
-                                                    <th scope="col">STT</th>
-                                                    <th scope="col">Tên khoá huấn luyện</th>
-                                                    <th scope="col">Ngày bắt đầu</th>
-                                                    <th scope="col">Ngày kết thúc</th>
-                                                  </tr>
-                                                </thead>
-                                                <tbody>
-                                                  <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>Tên khoá huấn luyện 1</td>
-                                                    <td>10/11/2021</td>
-                                                    <td>12/12/2021</td>
-                                                  </tr>
-                                                  
-                                                  <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>Tên khoá huấn luyện 2</td>
-                                                    <td>10/11/2021</td>
-                                                    <td>12/12/2021</td>
-                                                  </tr>
-                                                  <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>Tên khoá huấn luyện 3</td>
-                                                    <td>10/11/2021</td>
-                                                    <td>12/12/2021</td>
-                                                  </tr>
-                                                  <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>Tên khoá huấn luyện 4</td>
-                                                    <td>10/11/2021</td>
-                                                    <td>12/12/2021</td>
-                                                  </tr>
-                                                  <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>Tên khoá huấn luyện 5</td>
-                                                    <td>10/11/2021</td>
-                                                    <td>12/12/2021</td>
-                                                  </tr>
-                                                  <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>Tên khoá huấn luyện 6</td>
-                                                    <td>10/11/2021</td>
-                                                    <td>12/12/2021</td>
-                                                  </tr>
-                                                </tbody>
-                                              </table>
-                                              <!-- End Tables without borders -->
-                                
-                                            </div>
-                                          </div>
-                                    </div>
-                                    <div class="col-12">
+                                    <div class="col-lg-7">
                                         <div class="card">
                                             <div class="card-body">
                                                 <h5 class="card-title">Thống kê học viên theo cơ quan đơn vị</h5>
@@ -525,27 +438,83 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="col-lg-12">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Các khoá huấn luyện đang diễn ra</h5>
+                                                <!-- Active Table -->
+                                                <table class="table table-striped">
+                                                    <thead>
+                                                        <tr class="table-info">
+                                                            <th scope="col">STT</th>
+                                                            <th scope="col">Tên khoá huấn luyện</th>
+                                                            <th scope="col">Ngày bắt đầu</th>
+                                                            <th scope="col">Ngày kết thúc</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">1</th>
+                                                            <td><a href="class-detail.html">Khoá huấn luyện 1</a></td>
+                                                            <td>10/11/2021</td>
+                                                            <td>12/12/2021</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">1</th>
+                                                            <td>Tên khoá huấn luyện 2</td>
+                                                            <td>10/11/2021</td>
+                                                            <td>12/12/2021</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">1</th>
+                                                            <td>Tên khoá huấn luyện 3</td>
+                                                            <td>10/11/2021</td>
+                                                            <td>12/12/2021</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">1</th>
+                                                            <td>Tên khoá huấn luyện 4</td>
+                                                            <td>10/11/2021</td>
+                                                            <td>12/12/2021</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">1</th>
+                                                            <td>Tên khoá huấn luyện 5</td>
+                                                            <td>10/11/2021</td>
+                                                            <td>12/12/2021</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">1</th>
+                                                            <td>Tên khoá huấn luyện 6</td>
+                                                            <td>10/11/2021</td>
+                                                            <td>12/12/2021</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <!-- End Tables without borders -->
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="col-12">
                                         <div class="card">
                                             <div class="card-body">
                                                 <h5 class="card-title">Trạng thái hệ thống</h5>
                                                 <div class="row">
-                                                    <div class="col-3">  
-                                                    <div class="box">
-                                                        <div class="percent">
-                                                            <div class="percent-cpu">
-                                                                <svg >
-                                                                    <circle cx="70" cy="70" r="70"></circle>
-                                                                    <circle cx="70" cy="70" r="70"></circle>
-                                                                </svg>
+                                                    <div class="col-3">
+                                                        <div class="box">
+                                                            <div class="percent">
+                                                                <div class="percent-cpu">
+                                                                    <svg >
+                                                                        <circle cx="70" cy="70" r="70"></circle>
+                                                                        <circle cx="70" cy="70" r="70"></circle>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="num">
+                                                                    <h2>10<span>%</span></h2>
+                                                                </div>
                                                             </div>
-                                                        
-                                                        <div class="num">
-                                                            <h2>10<span>%</span></h2>
+                                                            <h2 class="text">CPU used: 10%</h2>
                                                         </div>
-                                                        </div>
-                                                        <h2 class="text">CPU used: 10%</h2>
-                                                    </div>
                                                     </div>
                                                     <div class="col-3">
                                                         <div class="box">
@@ -556,10 +525,9 @@
                                                                         <circle cx="70" cy="70" r="70"></circle>
                                                                     </svg>
                                                                 </div>
-                                                            
-                                                            <div class="num">
-                                                                <h2>20<span>%</span></h2>
-                                                            </div>
+                                                                <div class="num">
+                                                                    <h2>20<span>%</span></h2>
+                                                                </div>
                                                             </div>
                                                             <h2 class="text">Memory used: 20%</h2>
                                                         </div>
@@ -573,9 +541,9 @@
                                                                         <circle cx="70" cy="70" r="70"></circle>
                                                                     </svg>
                                                                 </div>
-                                                            <div class="num">
-                                                                <h2>50<span>%</span></h2>
-                                                            </div>
+                                                                <div class="num">
+                                                                    <h2>50<span>%</span></h2>
+                                                                </div>
                                                             </div>
                                                             <h2 class="text">Swap used: 50%</h2>
                                                         </div>
@@ -589,9 +557,9 @@
                                                                         <circle cx="70" cy="70" r="70"></circle>
                                                                     </svg>
                                                                 </div>
-                                                            <div class="num">
-                                                                <h2>90<span>%</span></h2>
-                                                            </div>
+                                                                <div class="num">
+                                                                    <h2>90<span>%</span></h2>
+                                                                </div>
                                                             </div>
                                                             <h2 class="text">Disk used: 90%</h2>
                                                         </div>
@@ -642,71 +610,45 @@
                                                 });
                                             </script>
                                             <!-- End Thong tin thiet bi -->
-                                            <br>
-                                            <hr>
+                                            <br><hr>
                                             <div class="row justify-content-md-center">
-                                                <div class="col-9">
-                                                    <canvas id="device2" style="max-height: 400px;"></canvas>
-                                                    <script>
-                                                        document.addEventListener("DOMContentLoaded", () => {
-                                                        new Chart(document.querySelector('#device2'), {
-                                                            type: 'polarArea',
-                                                            data: {
-                                                            labels: [
-                                                                'Cisco Juniper',
-                                                                'Loại 1',
-                                                                'Loại 2',
-                                                                'Loại 3',
-                                                                'Loại 4'
-                                                            ],
-                                                            datasets: [{
-                                                                label: 'My First Dataset',
-                                                                data: [11, 16, 7, 3, 14],
-                                                                backgroundColor: [
-                                                                'rgb(0, 227, 150)',
-                                                                'rgb(75, 192, 192)',
-                                                                'rgb(255, 205, 86)',
-                                                                'rgb(201, 203, 207)',
-                                                                'rgb(54, 162, 235)'
-                                                                ]
-                                                            }]
-                                                            }
-                                                        });
-                                                        });
-                                                    </script>
-                                                </div>
+                                                <div id="device2"></div>
+                                                <script>
+                                                    document.addEventListener("DOMContentLoaded", () => {
+                                                      new ApexCharts(document.querySelector("#device2"), {
+                                                        series: [44, 55, 78, 91, 34],
+                                                        chart: {
+                                                          height: 350,
+                                                          type: 'pie',
+                                                          toolbar: {
+                                                            show: true
+                                                          }
+                                                        },
+                                                        labels: ['Cisco Juniper', 'Loại 1', 'Loại 2', 'Loại 3', 'Loại 4']
+                                                      }).render();
+                                                    });
+                                                </script> 
                                             </div>
-                                            
-                                             
-                                            <br>
-                                            <hr>
-                                            <div class="row justify-content-md-center">
-                                                <div class="col-9">
+                                            <br><hr>
                                             <h5 class="card-title">Trạng thái POD</h5>
-                                            <canvas id="pod" style="max-height: 400px;"></canvas>
-                                            <script>
-                                                document.addEventListener("DOMContentLoaded", () => {
-                                                  new Chart(document.querySelector('#pod'), {
-                                                    type: 'pie',
-                                                    data: {
-                                                      labels: [
-                                                        'Đang sử dụng',
-                                                        'Chưa sử dụng',
-                                                      ],
-                                                      datasets: [{
-                                                        label: 'My First Dataset',
-                                                        data: [300, 50,],
-                                                        backgroundColor: [
-                                                          'rgb(0, 227, 150)',
-                                                          'rgb(54, 162, 235)'
-                                                        ],
-                                                        hoverOffset: 4
-                                                      }]
-                                                    }
-                                                  });
-                                                });
-                                            </script>
-                                            </div>
+                                            <div class="row justify-content-md-center">
+                                                
+                                                <div id="pod"></div>
+                                                <script>
+                                                    document.addEventListener("DOMContentLoaded", () => {
+                                                      new ApexCharts(document.querySelector("#pod"), {
+                                                        series: [44, 55],
+                                                        chart: {
+                                                          height: 350,
+                                                          type: 'pie',
+                                                          toolbar: {
+                                                            show: true
+                                                          }
+                                                        },
+                                                        labels: ['Chưa sử dụng', 'Đang sử dụng']
+                                                      }).render();
+                                                    });
+                                                </script>
                                             </div>
                                         </div>
                                     </div>
